@@ -1,4 +1,8 @@
 import { Award, Building2, Users, Shield } from "lucide-react";
+import bonetLogo from "@/assets/partners/bonet-logo.svg";
+import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
+import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
+import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 
 const certifications = [
   { name: "ISO 27001", description: "Information Security" },
@@ -7,13 +11,11 @@ const certifications = [
   { name: "OSCP/OSCE", description: "Team Certified" },
 ];
 
-const clientLogos = [
-  "Global Banking Corp",
-  "Tech Enterprise Inc",
-  "Healthcare Systems",
-  "Financial Services Co",
-  "Manufacturing Ltd",
-  "Retail Solutions",
+const trustedPartners = [
+  { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
+  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
+  { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
+  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/" },
 ];
 
 const TrustIndicators = () => {
@@ -69,21 +71,29 @@ const TrustIndicators = () => {
           </div>
         </div>
 
-        {/* Client Logos */}
+        {/* Trusted Partners */}
         <div className="text-center">
           <p className="font-body text-sm text-muted-foreground uppercase tracking-wider mb-8">
-            Trusted by leading organizations worldwide
+            Our Trusted Partners
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {clientLogos.map((logo, index) => (
-              <div
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {trustedPartners.map((partner, index) => (
+              <a
                 key={index}
-                className="bg-card rounded-lg p-4 flex items-center justify-center h-16 border border-border"
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300"
               >
-                <span className="font-body text-sm font-medium text-muted-foreground text-center">
-                  {logo}
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name} 
+                  className="h-12 w-auto object-contain"
+                />
+                <span className="font-body text-sm font-medium text-foreground">
+                  {partner.name}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
