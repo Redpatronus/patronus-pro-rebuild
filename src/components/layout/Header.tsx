@@ -47,7 +47,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button asChild>
-              <Link to="/contact">Get Started</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
 
@@ -86,7 +86,7 @@ const Header = () => {
             ))}
             <Button asChild className="mt-2">
               <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                Get Started
+                Contact Us
               </Link>
             </Button>
           </nav>
