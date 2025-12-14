@@ -120,18 +120,20 @@ const Services = () => {
                         </Link>
                       </Button>
                     </div>
-                    <div>
-                      <h3 className="font-body text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+                    <div className="bg-secondary/50 rounded-xl p-6">
+                      <h3 className="font-display text-base font-semibold text-foreground mb-5">
                         Key Capabilities
                       </h3>
-                      <div className="grid sm:grid-cols-2 gap-3">
+                      <div className="grid sm:grid-cols-2 gap-4">
                         {service.features.map((feature, featureIndex) => (
                           <div
                             key={featureIndex}
-                            className="flex items-center gap-2"
+                            className="flex items-start gap-3 p-3 bg-background rounded-lg border border-border/50 hover:border-primary/30 hover:shadow-sm transition-all duration-200"
                           >
-                            <CheckCircle className="h-5 w-5 text-trust-green flex-shrink-0" />
-                            <span className="font-body text-sm text-foreground">
+                            <div className="p-1 bg-primary/10 rounded-md mt-0.5">
+                              <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                            </div>
+                            <span className="font-body text-sm text-foreground leading-tight">
                               {feature}
                             </span>
                           </div>
