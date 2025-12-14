@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Inter", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      boxShadow: {
+        'enterprise': '0 4px 20px -2px rgba(0, 0, 0, 0.08)',
+        'enterprise-lg': '0 10px 40px -4px rgba(0, 0, 0, 0.12)',
       },
       borderRadius: {
         lg: "var(--radius)",
