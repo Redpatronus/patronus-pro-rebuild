@@ -30,8 +30,15 @@ const services = [
     description:
       "Specialized security assessments for AWS, Azure, and GCP environments, ensuring your cloud infrastructure meets enterprise security standards.",
     href: "/services/cloud-security",
+    platforms: ["AWS", "Azure", "GCP"],
   },
 ];
+
+const platformColors: Record<string, string> = {
+  AWS: "bg-[#FF9900]/10 text-[#FF9900] border-[#FF9900]/20",
+  Azure: "bg-[#0089D6]/10 text-[#0089D6] border-[#0089D6]/20",
+  GCP: "bg-[#4285F4]/10 text-[#4285F4] border-[#4285F4]/20",
+};
 
 const ServicesOverview = () => {
   return (
@@ -69,6 +76,21 @@ const ServicesOverview = () => {
                   <p className="font-body text-muted-foreground leading-relaxed mb-4">
                     {service.description}
                   </p>
+                  
+                  {/* Cloud Platform Badges */}
+                  {'platforms' in service && service.platforms && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {service.platforms.map((platform: string) => (
+                        <span
+                          key={platform}
+                          className={`px-2 py-1 text-xs font-semibold rounded border ${platformColors[platform]}`}
+                        >
+                          {platform}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  
                   <span className="inline-flex items-center font-body text-sm font-medium text-primary">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
