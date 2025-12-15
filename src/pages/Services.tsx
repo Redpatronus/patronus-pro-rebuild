@@ -64,8 +64,15 @@ const services = [
       "Cloud Compliance Assessment",
     ],
     href: "/services/cloud-security",
+    platforms: ["AWS", "Azure", "GCP"],
   },
 ];
+
+const platformColors: Record<string, string> = {
+  AWS: "bg-[#FF9900]/10 text-[#FF9900] border-[#FF9900]/20",
+  Azure: "bg-[#0089D6]/10 text-[#0089D6] border-[#0089D6]/20",
+  GCP: "bg-[#4285F4]/10 text-[#4285F4] border-[#4285F4]/20",
+};
 
 const Services = () => {
   return (
@@ -119,6 +126,25 @@ const Services = () => {
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>
                       </Button>
+                      
+                      {/* Cloud Platform Badges */}
+                      {'platforms' in service && service.platforms && (
+                        <div className="mt-6 pt-6 border-t border-border/50">
+                          <p className="font-body text-xs text-muted-foreground uppercase tracking-wider mb-3">
+                            Securing Your Cloud on
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {service.platforms.map((platform: string) => (
+                              <span
+                                key={platform}
+                                className={`px-3 py-1.5 text-sm font-semibold rounded-md border ${platformColors[platform]}`}
+                              >
+                                {platform}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                     <div className="bg-secondary/50 rounded-xl p-6">
                       <h3 className="font-display text-base font-semibold text-foreground mb-5">
