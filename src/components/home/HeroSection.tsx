@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
 
 const HeroSection = () => {
   const highlights = [
     "24/7 Security Operations",
     "Fortune 500 Trusted",
     "ISO 27001 Certified",
+  ];
+
+  const cloudPlatforms = [
+    { name: "AWS", color: "bg-[#FF9900]/10 text-[#FF9900] border-[#FF9900]/30" },
+    { name: "Azure", color: "bg-[#0089D6]/10 text-[#0089D6] border-[#0089D6]/30" },
+    { name: "GCP", color: "bg-[#4285F4]/10 text-[#4285F4] border-[#4285F4]/30" },
   ];
 
   return (
@@ -52,6 +58,28 @@ const HeroSection = () => {
                   </span>
                 </div>
               ))}
+            </div>
+
+            {/* Cloud Security Banner */}
+            <div className="mt-8 p-4 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-xl border border-primary/20">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                <div className="flex items-center gap-2">
+                  <Cloud className="h-5 w-5 text-primary" />
+                  <span className="font-body text-sm font-semibold text-foreground">
+                    Multi-Cloud Security Experts
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {cloudPlatforms.map((platform) => (
+                    <span
+                      key={platform.name}
+                      className={`px-3 py-1 text-xs font-bold rounded-full border ${platform.color}`}
+                    >
+                      {platform.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
