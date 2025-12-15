@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
+import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 
 const HeroSection = () => {
   const highlights = [
@@ -10,9 +11,9 @@ const HeroSection = () => {
   ];
 
   const cloudPlatforms = [
-    { name: "AWS", color: "bg-[#FF9900]/10 text-[#FF9900] border-[#FF9900]/30" },
-    { name: "Azure", color: "bg-[#0089D6]/10 text-[#0089D6] border-[#0089D6]/30" },
-    { name: "GCP", color: "bg-[#4285F4]/10 text-[#4285F4] border-[#4285F4]/30" },
+    { name: "AWS", Logo: AWSLogo, bgColor: "bg-[#FF9900]/10 hover:bg-[#FF9900]/20 border-[#FF9900]/30" },
+    { name: "Azure", Logo: AzureLogo, bgColor: "bg-[#0089D6]/10 hover:bg-[#0089D6]/20 border-[#0089D6]/30" },
+    { name: "GCP", Logo: GCPLogo, bgColor: "bg-[#4285F4]/10 hover:bg-[#4285F4]/20 border-[#4285F4]/30" },
   ];
 
   return (
@@ -71,12 +72,13 @@ const HeroSection = () => {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {cloudPlatforms.map((platform) => (
-                    <span
+                    <div
                       key={platform.name}
-                      className={`px-3 py-1 text-xs font-bold rounded-full border ${platform.color}`}
+                      className={`flex items-center gap-2 px-3 py-1.5 rounded-full border transition-colors ${platform.bgColor}`}
                     >
-                      {platform.name}
-                    </span>
+                      <platform.Logo className="h-4 w-4" />
+                      <span className="text-xs font-semibold text-foreground">{platform.name}</span>
+                    </div>
                   ))}
                 </div>
               </div>
