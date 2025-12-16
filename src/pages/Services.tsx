@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Shield, Target, FileSearch, Cloud, ArrowRight, CheckCircle } from "lucide-react";
+import { Target, Shield, Radar, GraduationCap, ClipboardCheck, KeyRound, Fish, Activity, ArrowRight, CheckCircle, Cloud } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 
 const cloudPlatforms = [
@@ -14,18 +14,18 @@ const cloudPlatforms = [
 const services = [
   {
     icon: Target,
-    title: "Penetration Testing",
+    title: "Offensive Security Services",
     description:
-      "Comprehensive security assessments that simulate real-world attacks to identify vulnerabilities in your infrastructure, applications, and networks before malicious actors can exploit them.",
+      "From classic penetration tests & customized phishing campaigns to RedTeam engagements. Our expert team simulates real-world cyber attacks to identify vulnerabilities and test your defenses.",
     features: [
-      "Web Application Testing",
-      "Network Infrastructure Testing",
-      "Mobile Application Security",
-      "API Security Assessment",
-      "Wireless Security Testing",
+      "Web Penetration Tests (OWASP)",
+      "Infrastructure Penetration Tests",
+      "Red Team Engagements",
+      "Attack Simulations",
       "Social Engineering Tests",
+      "Post-Exploitation Analysis",
     ],
-    href: "/services/penetration-testing",
+    href: "/services/offensive",
   },
   {
     icon: Cloud,
@@ -45,33 +45,108 @@ const services = [
   },
   {
     icon: Shield,
-    title: "Red Team Operations",
+    title: "Defensive Security Services",
     description:
-      "Advanced adversary simulation exercises that test your organization's detection and response capabilities against sophisticated threat actors using real-world attack techniques.",
+      "Comprehensive defensive security with continuous monitoring, DevSecOps, asset management, and proactive threat response to safeguard your organization.",
     features: [
-      "Full Adversary Simulation",
-      "Physical Security Testing",
-      "Detection & Response Testing",
-      "Executive Reporting",
-      "Purple Team Exercises",
-      "Assumed Breach Scenarios",
+      "Security Operations Center (SOC)",
+      "Continuous Security Scanning",
+      "DevSecOps Integration",
+      "Business Continuity Planning",
+      "Threat Detection & Response",
+      "Asset Management",
     ],
-    href: "/services/red-team",
+    href: "/services/defensive",
   },
   {
-    icon: FileSearch,
-    title: "Security Consulting",
+    icon: Radar,
+    title: "External Threat & Security Monitoring",
     description:
-      "Strategic security guidance including compliance assessments, policy development, and security architecture reviews tailored for enterprise environments.",
+      "OSINT-powered monitoring that uncovers vulnerabilities and delivers actionable insights through continuous surveillance of publicly available data.",
     features: [
-      "Compliance Assessment (SOC 2, ISO 27001)",
-      "Security Architecture Review",
-      "Policy & Procedure Development",
-      "Risk Assessment & Management",
-      "Security Program Development",
-      "Incident Response Planning",
+      "Comprehensive Data Analysis",
+      "Proactive Threat Detection",
+      "Actionable Insights",
+      "OSINT Tools Integration",
+      "Automated Surveillance",
+      "Real-time Monitoring",
     ],
-    href: "/services/security-consulting",
+    href: "/services/etsm",
+  },
+  {
+    icon: GraduationCap,
+    title: "Cybersecurity Training",
+    description:
+      "Equips employees with the skills to detect, report, and respond to cyber threats, ensuring compliance and protecting company assets.",
+    features: [
+      "Compliance Training",
+      "Threat Awareness Programs",
+      "Security Best Practices",
+      "Phishing Recognition",
+      "Incident Response Training",
+      "Customized Programs",
+    ],
+    href: "/services/training",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Compliance and Regulation / Audits",
+    description:
+      "Compliance assessments, OSINT analysis, and GAP analysis aligned with CIS, NIST, and EU regulations to ensure your organization meets all requirements.",
+    features: [
+      "CIS & NIST Compliance",
+      "EU Regulation Alignment",
+      "GAP Analysis",
+      "OSINT Methodology",
+      "Audit Support",
+      "Risk Assessment",
+    ],
+    href: "/services/compliance",
+  },
+  {
+    icon: KeyRound,
+    title: "Identity Access Management",
+    description:
+      "IAM as a Service using Okta, managed via Terraform and CI/CD for secure, efficient identity and access management across your organization.",
+    features: [
+      "Okta SSO Platform",
+      "Active Directory Integration",
+      "Terraform Management",
+      "CI/CD Pipeline Integration",
+      "Access Control Management",
+      "Multi-factor Authentication",
+    ],
+    href: "/services/iam",
+  },
+  {
+    icon: Fish,
+    title: "Phishing Simulation",
+    description:
+      "Test employee awareness with realistic phishing simulations to reduce risks and strengthen your cybersecurity culture.",
+    features: [
+      "Realistic Simulations",
+      "Employee Awareness Testing",
+      "Detailed Reporting",
+      "Risk Reduction",
+      "Compliance Support",
+      "Continuous Improvement",
+    ],
+    href: "/services/phishing",
+  },
+  {
+    icon: Activity,
+    title: "SIEM & Audit Logging",
+    description:
+      "Real-time monitoring of security events with comprehensive log analysis and rapid detection and response to potential security incidents.",
+    features: [
+      "Real-time Monitoring",
+      "Comprehensive Log Analysis",
+      "Threat Identification",
+      "Authentication Monitoring",
+      "Audit Log Management",
+      "Incident Response",
+    ],
+    href: "/services/siem",
   },
 ];
 
@@ -82,7 +157,7 @@ const Services = () => {
         <title>Security Services | Red Patronus</title>
         <meta
           name="description"
-          content="Explore Red Patronus enterprise security services including penetration testing, red team operations, security consulting, and cloud security assessments."
+          content="Explore Red Patronus comprehensive security services including offensive security, defensive security, compliance, IAM, training, and more."
         />
       </Helmet>
       <Layout>
@@ -96,7 +171,7 @@ const Services = () => {
               Enterprise Security Solutions
             </h1>
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-              From vulnerability assessments to advanced adversary simulations, we provide the comprehensive security services that enterprise organizations need to stay protected in today's threat landscape.
+              We offer a range of expert digital solutions designed to enhance security and streamline operations. From vulnerability assessments to advanced threat monitoring.
             </p>
           </div>
         </section>
@@ -121,7 +196,7 @@ const Services = () => {
                       <p className="font-body text-muted-foreground leading-relaxed mb-6">
                         {service.description}
                       </p>
-                      <Button asChild>
+                      <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                         <Link to={service.href}>
                           Learn More
                           <ArrowRight className="ml-2 h-4 w-4" />
@@ -184,7 +259,7 @@ const Services = () => {
             <p className="font-body text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Our team can tailor our services to meet your organization's specific security requirements and compliance needs.
             </p>
-            <Button size="lg" asChild>
+            <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
                 Contact Our Team
                 <ArrowRight className="ml-2 h-4 w-4" />

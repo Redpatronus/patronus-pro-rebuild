@@ -157,7 +157,7 @@ const About = () => {
                     <div className="font-body text-sm text-muted-foreground">Certifications Held</div>
                   </div>
                 </div>
-                <Button asChild>
+                <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <Link to="/contact">
                     Join Our Team
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -190,7 +190,7 @@ const About = () => {
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
               Let's discuss how Red Patronus can help strengthen your organization's security posture.
             </p>
-            <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90">
+            <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link to="/contact">
                 Contact Us Today
                 <ArrowRight className="ml-2 h-4 w-4" />
