@@ -6,7 +6,7 @@ import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 const HeroSection = () => {
   const highlights = [
     "24/7 Security Operations",
-    "Fortune 500 Trusted",
+    "Enterprise Trusted",
     "ISO 27001 Certified",
   ];
 

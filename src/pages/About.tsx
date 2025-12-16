@@ -43,7 +43,7 @@ const About = () => {
         <title>About Us | Red Patronus</title>
         <meta
           name="description"
-          content="Learn about Red Patronus, a leading enterprise cybersecurity firm with 15+ years of experience protecting Fortune 500 companies from cyber threats."
+          content="Learn about Red Patronus, a leading enterprise cybersecurity firm with 15+ years of experience protecting global organizations from cyber threats."
         />
       </Helmet>
       <Layout>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Shield, Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import logoRedpatronus from "@/assets/logo-redpatronus.png";
 
 const Footer = () => {
   return (
@@ -8,11 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <Shield className="h-8 w-8 text-primary-foreground" />
-              <span className="font-display text-xl font-semibold">
-                Red Patronus
-              </span>
+            <Link to="/" className="flex items-center mb-4">
+              <img src={logoRedpatronus} alt="Red Patronus" className="h-10 w-auto brightness-0 invert" />
             </Link>
             <p className="font-body text-sm text-background/70 mb-6 leading-relaxed">
               Enterprise-grade cybersecurity solutions protecting global organizations from evolving threats.
