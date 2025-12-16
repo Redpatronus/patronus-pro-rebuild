@@ -169,8 +169,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">Location</h3>
                       <p className="font-body text-muted-foreground">
-                        Global Headquarters<br />
-                        Serving clients worldwide
+                        Lenardova 1147/12<br />
+                        Bratislava 851 01<br />
+                        Slovakia
                       </p>
                     </div>
                   </div>

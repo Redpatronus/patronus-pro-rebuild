@@ -155,8 +155,9 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-background/60 mt-0.5" />
                 <span className="font-body text-sm text-background/70">
-                  Global Headquarters<br />
-                  Serving clients worldwide
+                  Lenardova 1147/12<br />
+                  Bratislava 851 01<br />
+                  Slovakia
                 </span>
               </li>
             </ul>
