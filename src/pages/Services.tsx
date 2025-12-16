@@ -21,6 +21,22 @@ const services = [
     href: "/services/penetration-testing",
   },
   {
+    icon: Cloud,
+    title: "Cloud Security",
+    description:
+      "Specialized security assessments for AWS, Azure, and GCP environments, ensuring your cloud infrastructure meets enterprise security standards and best practices.",
+    features: [
+      "Cloud Configuration Review",
+      "IAM Policy Assessment",
+      "Container Security Testing",
+      "Kubernetes Security Audit",
+      "DevSecOps Integration",
+      "Cloud Compliance Assessment",
+    ],
+    href: "/services/cloud-security",
+    platforms: ["AWS", "Azure", "GCP"],
+  },
+  {
     icon: Shield,
     title: "Red Team Operations",
     description:
@@ -49,22 +65,6 @@ const services = [
       "Incident Response Planning",
     ],
     href: "/services/security-consulting",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Security",
-    description:
-      "Specialized security assessments for AWS, Azure, and GCP environments, ensuring your cloud infrastructure meets enterprise security standards and best practices.",
-    features: [
-      "Cloud Configuration Review",
-      "IAM Policy Assessment",
-      "Container Security Testing",
-      "Kubernetes Security Audit",
-      "DevSecOps Integration",
-      "Cloud Compliance Assessment",
-    ],
-    href: "/services/cloud-security",
-    platforms: ["AWS", "Azure", "GCP"],
   },
 ];
 
