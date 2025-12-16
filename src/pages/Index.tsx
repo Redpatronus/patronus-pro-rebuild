@@ -12,7 +12,7 @@ const Index = () => {
         <title>Red Patronus | Enterprise Cybersecurity Solutions</title>
         <meta
           name="description"
-          content="Red Patronus delivers comprehensive offensive security services for enterprise organizations. Penetration testing, red team operations, and security consulting trusted by Fortune 500 companies."
+          content="Red Patronus delivers comprehensive offensive security services for enterprise organizations. Penetration testing, red team operations, and security consulting trusted by leading global companies."
         />
       </Helmet>
       <Layout>

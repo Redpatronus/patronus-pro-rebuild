@@ -8,7 +8,7 @@ const caseStudies = [
   {
     industry: "Financial Services",
     title: "Global Bank Security Transformation",
-    challenge: "A Fortune 500 bank needed comprehensive security assessment across 200+ applications before a major digital transformation initiative.",
+    challenge: "A major global bank needed comprehensive security assessment across 200+ applications before a major digital transformation initiative.",
     solution: "Conducted phased penetration testing program, red team engagement, and security architecture review over 12 months.",
     results: [
       "Identified 47 critical vulnerabilities",
@@ -47,7 +47,7 @@ const testimonials = [
   {
     quote: "Red Patronus transformed our security posture. Their team's expertise and professionalism exceeded our expectations at every stage.",
     author: "Chief Information Security Officer",
-    company: "Fortune 500 Financial Services Company",
+    company: "Leading Financial Services Company",
   },
   {
     quote: "The depth of their assessments gave us confidence that we were truly prepared for real-world threats. Exceptional work.",

@@ -196,7 +196,7 @@ const Contact = () => {
                   <ul className="space-y-3">
                     {[
                       "15+ years of enterprise security experience",
-                      "Trusted by 300+ Fortune 500 companies",
+                      "Trusted by 300+ enterprise companies",
                       "Industry-leading certifications",
                       "Dedicated account management",
                     ].map((item, index) => (
