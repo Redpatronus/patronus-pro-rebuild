@@ -139,10 +139,25 @@ const Contact = () => {
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">Email</h3>
                       <a
-                        href="mailto:sales@redpatron.us"
+                        href="mailto:info@redpatron.us"
                         className="font-body text-muted-foreground hover:text-primary transition-colors"
                       >
-                        sales@redpatron.us
+                        info@redpatron.us
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-accent rounded-lg">
+                      <Phone className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-body font-semibold text-foreground mb-1">Phone</h3>
+                      <a
+                        href="tel:+421948446778"
+                        className="font-body text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +421 948 446 778
                       </a>
                     </div>
                   </div>
