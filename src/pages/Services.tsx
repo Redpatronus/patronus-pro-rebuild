@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Shield, Target, FileSearch, Cloud, ArrowRight, CheckCircle } from "lucide-react";
+import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
+
+const cloudPlatforms = [
+  { name: "AWS", Logo: AWSLogo, bgColor: "bg-[#FF9900]/10 hover:bg-[#FF9900]/20 border-[#FF9900]/30" },
+  { name: "Azure", Logo: AzureLogo, bgColor: "bg-[#0089D6]/10 hover:bg-[#0089D6]/20 border-[#0089D6]/30" },
+  { name: "GCP", Logo: GCPLogo, bgColor: "bg-[#4285F4]/10 hover:bg-[#4285F4]/20 border-[#4285F4]/30" },
+];
 
 const services = [
   {
@@ -34,7 +41,7 @@ const services = [
       "Cloud Compliance Assessment",
     ],
     href: "/services/cloud-security",
-    platforms: ["AWS", "Azure", "GCP"],
+    hasCloudPlatforms: true,
   },
   {
     icon: Shield,
@@ -67,12 +74,6 @@ const services = [
     href: "/services/security-consulting",
   },
 ];
-
-const platformColors: Record<string, string> = {
-  AWS: "bg-[#FF9900]/10 text-[#FF9900] border-[#FF9900]/20",
-  Azure: "bg-[#0089D6]/10 text-[#0089D6] border-[#0089D6]/20",
-  GCP: "bg-[#4285F4]/10 text-[#4285F4] border-[#4285F4]/20",
-};
 
 const Services = () => {
   return (
@@ -128,19 +129,20 @@ const Services = () => {
                       </Button>
                       
                       {/* Cloud Platform Badges */}
-                      {'platforms' in service && service.platforms && (
+                      {'hasCloudPlatforms' in service && service.hasCloudPlatforms && (
                         <div className="mt-6 pt-6 border-t border-border/50">
                           <p className="font-body text-xs text-muted-foreground uppercase tracking-wider mb-3">
                             Securing Your Cloud on
                           </p>
                           <div className="flex flex-wrap gap-2">
-                            {service.platforms.map((platform: string) => (
-                              <span
-                                key={platform}
-                                className={`px-3 py-1.5 text-sm font-semibold rounded-md border ${platformColors[platform]}`}
+                            {cloudPlatforms.map((platform) => (
+                              <div
+                                key={platform.name}
+                                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md border transition-colors ${platform.bgColor}`}
                               >
-                                {platform}
-                              </span>
+                                <platform.Logo className="h-4 w-4" />
+                                <span className="text-sm font-semibold text-foreground">{platform.name}</span>
+                              </div>
                             ))}
                           </div>
                         </div>
