@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center mb-4">
-              <img src={logoRedpatronus} alt="Red Patronus" className="h-10 w-auto brightness-0 invert" />
+              <img src={logoRedpatronus} alt="Red Patronus" className="h-10 w-auto" />
             </Link>
             <p className="font-body text-sm text-background/70 mb-6 leading-relaxed">
               Enterprise-grade cybersecurity solutions protecting global organizations from evolving threats.
