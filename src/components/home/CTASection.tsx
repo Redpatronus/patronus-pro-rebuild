@@ -18,18 +18,18 @@ const CTASection = () => {
               size="lg"
               variant="secondary"
               asChild
-              className="bg-background text-primary hover:bg-background/90"
+              className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <Link to="/contact">
                 Schedule Consultation
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="secondary"
               asChild
-              className="bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/30"
+              className="bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30 hover:bg-primary-foreground/30 transition-all duration-300 hover:scale-105 hover:shadow-lg"
             >
               <a href="tel:+1234567890">
                 <Phone className="mr-2 h-4 w-4" />
