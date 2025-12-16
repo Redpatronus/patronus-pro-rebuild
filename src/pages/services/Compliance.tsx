@@ -1,0 +1,111 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import Layout from "@/components/layout/Layout";
+import { Button } from "@/components/ui/button";
+import { ClipboardCheck, ArrowRight, CheckCircle, FileText, Scale, Search } from "lucide-react";
+
+const features = [
+  {
+    title: "Proven Expertise, Global Standards",
+    description: "We leverage internationally recognized benchmarks like CIS and NIST 2 to build a robust compliance framework that aligns with EU regulations.",
+  },
+  {
+    title: "Tailored to Your Needs",
+    description: "Fully customizable services to address your specific challenges, whether you're a small enterprise or a multinational corporation.",
+  },
+  {
+    title: "Proactive Risk Management",
+    description: "Identify and mitigate risks before they become threats with our comprehensive assessment approach.",
+  },
+  {
+    title: "GAP Analysis",
+    description: "Detailed gap analysis to identify where your current security posture falls short of compliance requirements.",
+  },
+  {
+    title: "OSINT Methodology",
+    description: "Advanced OSINT methodologies to ensure your operations are secure, trusted, and future-proof.",
+  },
+  {
+    title: "Audit Support",
+    description: "Complete audit support and documentation to help you pass compliance assessments with confidence.",
+  },
+];
+
+const Compliance = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Compliance and Regulation Audits | Red Patronus</title>
+        <meta
+          name="description"
+          content="Expert compliance and regulation audit services including GAP analysis, OSINT, and assessments aligned with CIS, NIST, and EU regulations."
+        />
+      </Helmet>
+      <Layout>
+        {/* Hero */}
+        <section className="gradient-hero py-16 lg:py-24">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="max-w-4xl">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
+                <ClipboardCheck className="h-4 w-4 text-primary" />
+                <span className="font-body text-sm font-medium text-accent-foreground">
+                  Compliance Services
+                </span>
+              </div>
+              <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
+                Compliance and Regulation / Audits
+              </h1>
+              <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
+                Our service is meticulously crafted to help your organization not only meet but exceed stringent standards. With our innovative blend of traditional assessments, GAP analysis, and advanced OSINT methodologies, your operations will be secure and compliant.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Features */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-xl p-6 shadow-card border border-border hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="p-2 bg-accent rounded-lg inline-block mb-4">
+                    <CheckCircle className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="font-body text-sm text-muted-foreground">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 lg:py-24 bg-primary">
+          <div className="container mx-auto px-4 lg:px-8 text-center">
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
+              Achieve Compliance Excellence
+            </h2>
+            <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+              Let us help you navigate complex compliance requirements and achieve your regulatory goals.
+            </p>
+            <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <Link to="/contact">
+                Start Assessment
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </section>
+      </Layout>
+    </>
+  );
+};
+
+export default Compliance;

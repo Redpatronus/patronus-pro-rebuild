@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import logoRedpatronus from "@/assets/logo-redpatronus.png";
 
 const Footer = () => {
@@ -17,18 +17,13 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/redpatronus"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-background/60 hover:text-background transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-background/60 hover:text-background transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -39,26 +34,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  to="/services/penetration-testing"
+                  to="/services/offensive"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Penetration Testing
+                  Offensive Security
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/services/red-team"
+                  to="/services/defensive"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Red Team Operations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/security-consulting"
-                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
-                >
-                  Security Consulting
+                  Defensive Security
                 </Link>
               </li>
               <li>
@@ -67,6 +54,22 @@ const Footer = () => {
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
                   Cloud Security
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/compliance"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  Compliance & Audits
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/training"
+                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
+                >
+                  Cybersecurity Training
                 </Link>
               </li>
             </ul>
@@ -110,19 +113,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-background/60" />
                 <a
-                  href="mailto:contact@redpatronus.com"
+                  href="mailto:sales@redpatron.us"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  contact@redpatronus.com
-                </a>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-4 w-4 text-background/60" />
-                <a
-                  href="tel:+1234567890"
-                  className="font-body text-sm text-background/70 hover:text-background transition-colors"
-                >
-                  +1 (234) 567-890
+                  sales@redpatron.us
                 </a>
               </li>
               <li className="flex items-start gap-3">

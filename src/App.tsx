@@ -13,6 +13,14 @@ import PenetrationTesting from "./pages/services/PenetrationTesting";
 import RedTeam from "./pages/services/RedTeam";
 import SecurityConsulting from "./pages/services/SecurityConsulting";
 import CloudSecurity from "./pages/services/CloudSecurity";
+import OffensiveSecurity from "./pages/services/OffensiveSecurity";
+import DefensiveSecurity from "./pages/services/DefensiveSecurity";
+import ETSM from "./pages/services/ETSM";
+import Training from "./pages/services/Training";
+import Compliance from "./pages/services/Compliance";
+import IAM from "./pages/services/IAM";
+import Phishing from "./pages/services/Phishing";
+import SIEM from "./pages/services/SIEM";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +39,14 @@ const App = () => (
             <Route path="/services/red-team" element={<RedTeam />} />
             <Route path="/services/security-consulting" element={<SecurityConsulting />} />
             <Route path="/services/cloud-security" element={<CloudSecurity />} />
+            <Route path="/services/offensive" element={<OffensiveSecurity />} />
+            <Route path="/services/defensive" element={<DefensiveSecurity />} />
+            <Route path="/services/etsm" element={<ETSM />} />
+            <Route path="/services/training" element={<Training />} />
+            <Route path="/services/compliance" element={<Compliance />} />
+            <Route path="/services/iam" element={<IAM />} />
+            <Route path="/services/phishing" element={<Phishing />} />
+            <Route path="/services/siem" element={<SIEM />} />
             <Route path="/about" element={<About />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/contact" element={<Contact />} />

@@ -39,13 +39,13 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <Link to="/contact">
                   Schedule Consultation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <Link to="/services">Explore Services</Link>
               </Button>
             </div>
