@@ -92,12 +92,12 @@ const services = [
     icon: ClipboardCheck,
     title: "Compliance and Regulation / Audits",
     description:
-      "Compliance assessments, OSINT analysis, and GAP analysis aligned with CIS, NIST, and EU regulations to ensure your organization meets all requirements.",
+      "DORA-aligned compliance assessments, OSINT analysis, and GAP analysis following CIS, NIST, and EU regulations to ensure your organization meets all operational resilience requirements.",
     features: [
-      "CIS & NIST Compliance",
-      "EU Regulation Alignment",
+      "DORA Compliance",
+      "CIS & NIST Alignment",
+      "EU Regulation Compliance",
       "GAP Analysis",
-      "OSINT Methodology",
       "Audit Support",
       "Risk Assessment",
     ],
@@ -157,7 +157,7 @@ const Services = () => {
         <title>Security Services | Red Patronus</title>
         <meta
           name="description"
-          content="Explore Red Patronus comprehensive security services including offensive security, defensive security, compliance, IAM, training, and more."
+          content="Explore Red Patronus DORA-compliant security services including offensive security, defensive security, compliance, IAM, training, and more. All solutions delivered by the book of Digital Operational Resilience Act."
         />
       </Helmet>
       <Layout>
@@ -171,7 +171,7 @@ const Services = () => {
               Enterprise Security Solutions
             </h1>
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-              We offer a range of expert digital solutions designed to enhance security and streamline operations. From vulnerability assessments to advanced threat monitoring.
+              We deliver expert digital solutions by the book of DORA (Digital Operational Resilience Act) compliance. From vulnerability assessments to advanced threat monitoring, all our services are designed to meet the highest regulatory standards.
             </p>
           </div>
         </section>

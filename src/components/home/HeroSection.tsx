@@ -4,7 +4,7 @@ import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 
 const HeroSection = () => {
-  const highlights = ["24/7 Security Operations", "Enterprise Trusted", "ISO 27001 Certified"];
+  const highlights = ["24/7 Security Operations", "DORA Compliant", "ISO 27001 Certified"];
 
   const cloudPlatforms = [
     { name: "AWS", Logo: AWSLogo, bgColor: "bg-[#FF9900]/10 hover:bg-[#FF9900]/20 border-[#FF9900]/30" },
@@ -29,8 +29,8 @@ const HeroSection = () => {
             </h1>
 
             <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              Red Patronus delivers comprehensive offensive security services that identify vulnerabilities before
-              adversaries can exploit them. Trusted by leading global enterprises.
+              Red Patronus delivers comprehensive security services aligned with DORA (Digital Operational Resilience Act) 
+              that identify vulnerabilities before adversaries can exploit them. Trusted by leading financial and enterprise organizations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

@@ -6,8 +6,12 @@ import { ClipboardCheck, ArrowRight, CheckCircle, FileText, Scale, Search } from
 
 const features = [
   {
+    title: "DORA Compliance",
+    description: "Full alignment with Digital Operational Resilience Act requirements, ensuring your financial services organization meets EU regulatory standards for ICT risk management.",
+  },
+  {
     title: "Proven Expertise, Global Standards",
-    description: "We leverage internationally recognized benchmarks like CIS and NIST 2 to build a robust compliance framework that aligns with EU regulations.",
+    description: "We leverage internationally recognized benchmarks like CIS, NIST 2, and DORA to build a robust compliance framework aligned with EU regulations.",
   },
   {
     title: "Tailored to Your Needs",
@@ -15,19 +19,15 @@ const features = [
   },
   {
     title: "Proactive Risk Management",
-    description: "Identify and mitigate risks before they become threats with our comprehensive assessment approach.",
+    description: "Identify and mitigate ICT risks before they become threats with our comprehensive DORA-aligned assessment approach.",
   },
   {
     title: "GAP Analysis",
-    description: "Detailed gap analysis to identify where your current security posture falls short of compliance requirements.",
-  },
-  {
-    title: "OSINT Methodology",
-    description: "Advanced OSINT methodologies to ensure your operations are secure, trusted, and future-proof.",
+    description: "Detailed gap analysis to identify where your current security posture falls short of DORA and other compliance requirements.",
   },
   {
     title: "Audit Support",
-    description: "Complete audit support and documentation to help you pass compliance assessments with confidence.",
+    description: "Complete audit support and documentation to help you pass DORA compliance assessments with confidence.",
   },
 ];
 
@@ -35,10 +35,10 @@ const Compliance = () => {
   return (
     <>
       <Helmet>
-        <title>Compliance and Regulation Audits | Red Patronus</title>
+        <title>DORA Compliance and Regulation Audits | Red Patronus</title>
         <meta
           name="description"
-          content="Expert compliance and regulation audit services including GAP analysis, OSINT, and assessments aligned with CIS, NIST, and EU regulations."
+          content="DORA-compliant audit services including Digital Operational Resilience Act assessments, GAP analysis, and compliance alignment with CIS, NIST, and EU regulations."
         />
       </Helmet>
       <Layout>
@@ -56,7 +56,7 @@ const Compliance = () => {
                 Compliance and Regulation / Audits
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our service is meticulously crafted to help your organization not only meet but exceed stringent standards. With our innovative blend of traditional assessments, GAP analysis, and advanced OSINT methodologies, your operations will be secure and compliant.
+                Our services are delivered by the book of DORA (Digital Operational Resilience Act) compliance. We help your organization not only meet but exceed stringent standards with our innovative blend of traditional assessments, GAP analysis, and ICT risk management methodologies.
               </p>
             </div>
           </div>
