@@ -96,11 +96,15 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Red Patronus</title>
+        <title>Contact Us | Red Patronus - DORA Cybersecurity Consultation</title>
         <meta
           name="description"
-          content="Contact Red Patronus to discuss your enterprise security needs. Schedule a consultation with our cybersecurity experts today."
+          content="Contact Red Patronus for DORA-compliant cybersecurity solutions. Schedule a consultation with our enterprise security experts in Bratislava, Slovakia."
         />
+        <link rel="canonical" href="https://redpatron.us/contact" />
+        <meta property="og:title" content="Contact Red Patronus - Schedule Security Consultation" />
+        <meta property="og:description" content="Get in touch for DORA-compliant cybersecurity services. Enterprise security experts ready to help." />
+        <meta property="og:url" content="https://redpatron.us/contact" />
       </Helmet>
       <Layout>
         {/* Hero */}

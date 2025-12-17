@@ -60,11 +60,15 @@ const CaseStudies = () => {
   return (
     <>
       <Helmet>
-        <title>Case Studies | Red Patronus</title>
+        <title>Case Studies | Red Patronus - Enterprise Security Success Stories</title>
         <meta
           name="description"
-          content="Explore how Red Patronus has helped enterprise organizations strengthen their security posture through penetration testing, red team operations, and security consulting."
+          content="Explore how Red Patronus has helped 300+ enterprise organizations achieve DORA compliance and strengthen security through penetration testing and red team operations."
         />
+        <link rel="canonical" href="https://redpatron.us/case-studies" />
+        <meta property="og:title" content="Red Patronus Case Studies - Enterprise Security Results" />
+        <meta property="og:description" content="Real results from 300+ enterprise clients. SOC 2, HIPAA, DORA compliance achieved." />
+        <meta property="og:url" content="https://redpatron.us/case-studies" />
       </Helmet>
       <Layout>
         {/* Hero */}

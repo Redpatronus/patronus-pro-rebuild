@@ -40,11 +40,15 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Red Patronus</title>
+        <title>About Us | Red Patronus - DORA-Compliant Cybersecurity Experts</title>
         <meta
           name="description"
-          content="Learn about Red Patronus, a leading enterprise cybersecurity firm with 15+ years of experience protecting global organizations from cyber threats."
+          content="Learn about Red Patronus, a leading DORA-compliant cybersecurity firm with 15+ years protecting enterprise and financial organizations from cyber threats."
         />
+        <link rel="canonical" href="https://redpatron.us/about" />
+        <meta property="og:title" content="About Red Patronus - Enterprise Cybersecurity Experts" />
+        <meta property="og:description" content="15+ years of enterprise security experience. DORA-compliant solutions for financial institutions." />
+        <meta property="og:url" content="https://redpatron.us/about" />
       </Helmet>
       <Layout>
         {/* Hero */}
