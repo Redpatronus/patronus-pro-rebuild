@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
@@ -29,34 +30,36 @@ const queryClient = new QueryClient();
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/penetration-testing" element={<PenetrationTesting />} />
-            <Route path="/services/red-team" element={<RedTeam />} />
-            <Route path="/services/security-consulting" element={<SecurityConsulting />} />
-            <Route path="/services/cloud-security" element={<CloudSecurity />} />
-            <Route path="/services/offensive" element={<OffensiveSecurity />} />
-            <Route path="/services/defensive" element={<DefensiveSecurity />} />
-            <Route path="/services/etsm" element={<ETSM />} />
-            <Route path="/services/training" element={<Training />} />
-            <Route path="/services/compliance" element={<Compliance />} />
-            <Route path="/services/iam" element={<IAM />} />
-            <Route path="/services/phishing" element={<Phishing />} />
-            <Route path="/services/siem" element={<SIEM />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
+      <LanguageProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/penetration-testing" element={<PenetrationTesting />} />
+              <Route path="/services/red-team" element={<RedTeam />} />
+              <Route path="/services/security-consulting" element={<SecurityConsulting />} />
+              <Route path="/services/cloud-security" element={<CloudSecurity />} />
+              <Route path="/services/offensive" element={<OffensiveSecurity />} />
+              <Route path="/services/defensive" element={<DefensiveSecurity />} />
+              <Route path="/services/etsm" element={<ETSM />} />
+              <Route path="/services/training" element={<Training />} />
+              <Route path="/services/compliance" element={<Compliance />} />
+              <Route path="/services/iam" element={<IAM />} />
+              <Route path="/services/phishing" element={<Phishing />} />
+              <Route path="/services/siem" element={<SIEM />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/case-studies" element={<CaseStudies />} />
+              <Route path="/contact" element={<Contact />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </LanguageProvider>
     </QueryClientProvider>
   </HelmetProvider>
 );

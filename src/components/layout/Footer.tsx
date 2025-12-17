@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import logoRedpatronus from "@/assets/logo-redpatronus.png";
 
 const XIcon = ({ className }: { className?: string }) => (
@@ -9,6 +10,8 @@ const XIcon = ({ className }: { className?: string }) => (
 );
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-foreground text-background">
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
@@ -19,7 +22,7 @@ const Footer = () => {
               <img src={logoRedpatronus} alt="Red Patronus" className="h-10 w-auto" />
             </Link>
             <p className="font-body text-sm text-background/70 mb-6 leading-relaxed">
-              Enterprise-grade cybersecurity solutions protecting global organizations from evolving threats.
+              {t("footer.description")}
             </p>
             <div className="flex gap-4">
               <a
@@ -54,14 +57,14 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Services</h4>
+            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.services")}</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   to="/services/offensive"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Offensive Security
+                  {t("services.offensive.title")}
                 </Link>
               </li>
               <li>
@@ -69,7 +72,7 @@ const Footer = () => {
                   to="/services/defensive"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Defensive Security
+                  {t("services.defensive.title")}
                 </Link>
               </li>
               <li>
@@ -77,7 +80,7 @@ const Footer = () => {
                   to="/services/cloud-security"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Cloud Security
+                  {t("services.cloud.title")}
                 </Link>
               </li>
               <li>
@@ -85,7 +88,7 @@ const Footer = () => {
                   to="/services/compliance"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Compliance & Audits
+                  {t("services.compliance.title")}
                 </Link>
               </li>
               <li>
@@ -93,7 +96,7 @@ const Footer = () => {
                   to="/services/training"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Cybersecurity Training
+                  {t("services.training.title")}
                 </Link>
               </li>
             </ul>
@@ -101,14 +104,14 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Company</h4>
+            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.company")}</h4>
             <ul className="space-y-3">
               <li>
                 <Link
                   to="/about"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  About Us
+                  {t("footer.aboutUs")}
                 </Link>
               </li>
               <li>
@@ -116,7 +119,7 @@ const Footer = () => {
                   to="/case-studies"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Case Studies
+                  {t("nav.caseStudies")}
                 </Link>
               </li>
               <li>
@@ -124,7 +127,7 @@ const Footer = () => {
                   to="/contact"
                   className="font-body text-sm text-background/70 hover:text-background transition-colors"
                 >
-                  Contact
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
@@ -132,7 +135,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="font-display text-lg font-semibold mb-4">{t("footer.contactInfo")}</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-background/60" />
@@ -167,20 +170,20 @@ const Footer = () => {
         <div className="border-t border-background/10 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-body text-sm text-background/60">
-              © {new Date().getFullYear()} Red Patronus. All rights reserved.
+              © {new Date().getFullYear()} Red Patronus. {t("footer.copyright")}
             </p>
             <div className="flex gap-6">
               <a
                 href="#"
                 className="font-body text-sm text-background/60 hover:text-background transition-colors"
               >
-                Privacy Policy
+                {t("footer.privacy")}
               </a>
               <a
                 href="#"
                 className="font-body text-sm text-background/60 hover:text-background transition-colors"
               >
-                Terms of Service
+                {t("footer.terms")}
               </a>
             </div>
           </div>

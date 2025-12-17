@@ -2,14 +2,28 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
-  const highlights = ["24/7 Security Operations", "DORA Compliant", "ISO 27001 Certified"];
+  const { t } = useLanguage();
+  
+  const highlights = [
+    t("hero.highlight1"),
+    t("hero.highlight2"),
+    t("hero.highlight3"),
+  ];
 
   const cloudPlatforms = [
     { name: "AWS", Logo: AWSLogo, bgColor: "bg-[#FF9900]/10 hover:bg-[#FF9900]/20 border-[#FF9900]/30" },
     { name: "Azure", Logo: AzureLogo, bgColor: "bg-[#0089D6]/10 hover:bg-[#0089D6]/20 border-[#0089D6]/30" },
     { name: "GCP", Logo: GCPLogo, bgColor: "bg-[#4285F4]/10 hover:bg-[#4285F4]/20 border-[#4285F4]/30" },
+  ];
+
+  const stats = [
+    { label: t("trust.stats.years"), value: "15+" },
+    { label: t("trust.stats.projects"), value: "2,500+" },
+    { label: t("trust.stats.clients"), value: "30+" },
+    { label: t("trust.stats.experts"), value: "50K+" },
   ];
 
   return (
@@ -24,19 +38,17 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
-              Protecting Your Enterprise from
-              <span className="text-primary"> Evolving Threats</span>
+              {t("hero.title")}
             </h1>
 
             <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              Red Patronus delivers comprehensive security services aligned with DORA (Digital Operational Resilience Act) 
-              that identify vulnerabilities before adversaries can exploit them. Trusted by leading financial and enterprise organizations.
+              {t("hero.subtitle")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <Link to="/contact">
-                  Schedule Consultation
+                  {t("hero.cta")}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -46,7 +58,7 @@ const HeroSection = () => {
                 asChild
                 className="transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
-                <Link to="/services">Explore Services</Link>
+                <Link to="/services">{t("hero.secondaryCta")}</Link>
               </Button>
             </div>
 
@@ -85,12 +97,7 @@ const HeroSection = () => {
           <div className="relative animate-fade-in animation-delay-200">
             <div className="relative bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 lg:p-12">
               <div className="grid grid-cols-2 gap-4">
-                {[
-                  { label: "Years Experience", value: "15+" },
-                  { label: "Assessments Completed", value: "2,500+" },
-                  { label: "Enterprise Clients", value: "30+" },
-                  { label: "Vulnerabilities Found", value: "50K+" },
-                ].map((stat, index) => (
+                {stats.map((stat, index) => (
                   <div key={index} className="bg-card rounded-xl p-6 shadow-card text-center">
                     <div className="font-display text-3xl lg:text-4xl font-bold text-primary mb-2">{stat.value}</div>
                     <div className="font-body text-sm text-muted-foreground">{stat.label}</div>

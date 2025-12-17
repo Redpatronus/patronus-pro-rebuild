@@ -2,18 +2,21 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguagePicker from "@/components/LanguagePicker";
 import logoRedpatronus from "@/assets/logo-redpatronus.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About" },
-    { href: "/case-studies", label: "Case Studies" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", labelKey: "nav.home" },
+    { href: "/services", labelKey: "nav.services" },
+    { href: "/about", labelKey: "nav.about" },
+    { href: "/case-studies", labelKey: "nav.caseStudies" },
+    { href: "/contact", labelKey: "nav.contact" },
   ];
 
   const isActive = (href: string) => location.pathname === href;
@@ -39,30 +42,34 @@ const Header = () => {
                     : "text-muted-foreground"
                 }`}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          {/* Desktop CTA & Language Picker */}
+          <div className="hidden lg:flex items-center gap-4">
+            <LanguagePicker />
             <Button asChild>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">{t("nav.contactUs")}</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-foreground" />
-            ) : (
-              <Menu className="h-6 w-6 text-foreground" />
-            )}
-          </button>
+          <div className="lg:hidden flex items-center gap-2">
+            <LanguagePicker />
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-foreground" />
+              ) : (
+                <Menu className="h-6 w-6 text-foreground" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -81,12 +88,12 @@ const Header = () => {
                     : "text-muted-foreground"
                 }`}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
             <Button asChild className="mt-2">
               <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                Contact Us
+                {t("nav.contactUs")}
               </Link>
             </Button>
           </nav>
