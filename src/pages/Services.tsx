@@ -154,11 +154,15 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>Security Services | Red Patronus</title>
+        <title>DORA-Compliant Security Services | Red Patronus</title>
         <meta
           name="description"
-          content="Explore Red Patronus DORA-compliant security services including offensive security, defensive security, compliance, IAM, training, and more. All solutions delivered by the book of Digital Operational Resilience Act."
+          content="Red Patronus DORA-compliant cybersecurity services: penetration testing, red team, cloud security, compliance audits, IAM, and security training for enterprises."
         />
+        <link rel="canonical" href="https://redpatron.us/services" />
+        <meta property="og:title" content="DORA-Compliant Security Services | Red Patronus" />
+        <meta property="og:description" content="Enterprise cybersecurity services aligned with Digital Operational Resilience Act requirements." />
+        <meta property="og:url" content="https://redpatron.us/services" />
       </Helmet>
       <Layout>
         {/* Hero */}
