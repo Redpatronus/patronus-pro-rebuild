@@ -10,6 +10,10 @@ const features = [
     description: "Comprehensive vulnerability assessments simulating advanced cyber attacks to evaluate your IT infrastructure, applications, and networks.",
   },
   {
+    title: "AI-Powered Penetration Testing",
+    description: "Leverage artificial intelligence to automate and enhance penetration testing, uncovering vulnerabilities faster and more thoroughly than traditional methods.",
+  },
+  {
     title: "Web Penetration Tests",
     description: "Testing by OWASP methodology to identify vulnerabilities in web applications before malicious actors can exploit them.",
   },
