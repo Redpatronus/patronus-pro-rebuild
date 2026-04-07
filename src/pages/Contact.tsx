@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { z } from "zod";
 
@@ -20,6 +21,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     company: "",
@@ -35,7 +37,6 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (errors[name as keyof ContactFormData]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
@@ -45,7 +46,6 @@ const Contact = () => {
     e.preventDefault();
     setErrors({});
 
-    // Validate form
     const result = contactSchema.safeParse(formData);
     if (!result.success) {
       const fieldErrors: Partial<Record<keyof ContactFormData, string>> = {};
@@ -60,7 +60,6 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Submit to edge function
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`,
         {
@@ -79,13 +78,13 @@ const Contact = () => {
 
       setIsSubmitted(true);
       toast({
-        title: "Message Sent",
-        description: "Thank you for contacting us. We'll be in touch soon.",
+        title: t("contact.toast.successTitle"),
+        description: t("contact.toast.successDesc"),
       });
     } catch (error) {
       toast({
-        title: "Error",
-        description: "There was a problem sending your message. Please try again.",
+        title: t("contact.toast.errorTitle"),
+        description: t("contact.toast.errorDesc"),
         variant: "destructive",
       });
     } finally {
@@ -93,46 +92,44 @@ const Contact = () => {
     }
   };
 
+  const whyItems = [
+    t("contact.whyItems.0"),
+    t("contact.whyItems.1"),
+    t("contact.whyItems.2"),
+    t("contact.whyItems.3"),
+  ];
+
   return (
     <>
       <Helmet>
         <title>Contact Us | Red Patronus - DORA Cybersecurity Consultation</title>
-        <meta
-          name="description"
-          content="Contact Red Patronus for DORA-compliant cybersecurity solutions. Schedule a consultation with our enterprise security experts in Bratislava, Slovakia."
-        />
+        <meta name="description" content="Contact Red Patronus for DORA-compliant cybersecurity solutions. Schedule a consultation with our enterprise security experts in Bratislava, Slovakia." />
         <link rel="canonical" href="https://redpatron.us/contact" />
-        <meta property="og:title" content="Contact Red Patronus - Schedule Security Consultation" />
-        <meta property="og:description" content="Get in touch for DORA-compliant cybersecurity services. Enterprise security experts ready to help." />
-        <meta property="og:url" content="https://redpatron.us/contact" />
       </Helmet>
       <Layout>
-        {/* Hero */}
         <section className="gradient-hero py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
-              Contact Us
+              {t("contact.heroLabel")}
             </span>
             <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6 text-balance">
-              Let's Discuss Your Security Needs
+              {t("contact.heroTitle")}
             </h1>
             <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our team of security experts is ready to help you protect your enterprise. Reach out to schedule a consultation.
+              {t("contact.heroSubtitle")}
             </p>
           </div>
         </section>
 
-        {/* Contact Section */}
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-              {/* Contact Info */}
               <div>
                 <h2 className="font-display text-2xl lg:text-3xl font-bold text-foreground mb-6">
-                  Get in Touch
+                  {t("contact.getInTouch")}
                 </h2>
                 <p className="font-body text-lg text-muted-foreground mb-8 leading-relaxed">
-                  Whether you need a security assessment, compliance guidance, or want to learn more about our services, we're here to help.
+                  {t("contact.getInTouchDesc")}
                 </p>
 
                 <div className="space-y-6 mb-10">
@@ -141,11 +138,8 @@ const Contact = () => {
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Email</h3>
-                      <a
-                        href="mailto:info@redpatron.us"
-                        className="font-body text-muted-foreground hover:text-primary transition-colors"
-                      >
+                      <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.emailLabel")}</h3>
+                      <a href="mailto:info@redpatron.us" className="font-body text-muted-foreground hover:text-primary transition-colors">
                         info@redpatron.us
                       </a>
                     </div>
@@ -156,11 +150,8 @@ const Contact = () => {
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Phone</h3>
-                      <a
-                        href="tel:+421948446778"
-                        className="font-body text-muted-foreground hover:text-primary transition-colors"
-                      >
+                      <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.phoneLabel")}</h3>
+                      <a href="tel:+421948446778" className="font-body text-muted-foreground hover:text-primary transition-colors">
                         +421 948 446 778
                       </a>
                     </div>
@@ -171,7 +162,7 @@ const Contact = () => {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Location</h3>
+                      <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.locationLabel")}</h3>
                       <p className="font-body text-muted-foreground">
                         Lenardova 1147/12<br />
                         Bratislava 851 01<br />
@@ -185,26 +176,20 @@ const Contact = () => {
                       <Clock className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Response Time</h3>
+                      <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.responseTimeLabel")}</h3>
                       <p className="font-body text-muted-foreground">
-                        We typically respond within 24 business hours
+                        {t("contact.responseTimeValue")}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Trust indicators */}
                 <div className="bg-surface rounded-xl p-6 border border-border">
                   <h3 className="font-body text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
-                    Why Choose Red Patronus
+                    {t("contact.whyChoose")}
                   </h3>
                   <ul className="space-y-3">
-                    {[
-                      "15+ years of enterprise security experience",
-                      "Trusted by 300+ enterprise companies",
-                      "Industry-leading certifications",
-                      "Dedicated account management",
-                    ].map((item, index) => (
+                    {whyItems.map((item, index) => (
                       <li key={index} className="flex items-center gap-2">
                         <CheckCircle className="h-5 w-5 text-trust-green" />
                         <span className="font-body text-sm text-foreground">{item}</span>
@@ -214,7 +199,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Contact Form */}
               <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-card border border-border">
                 {isSubmitted ? (
                   <div className="text-center py-12">
@@ -222,110 +206,63 @@ const Contact = () => {
                       <CheckCircle className="h-8 w-8 text-trust-green" />
                     </div>
                     <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-                      Message Received
+                      {t("contact.messageReceived")}
                     </h3>
                     <p className="font-body text-muted-foreground mb-6">
-                      Thank you for reaching out. One of our security consultants will contact you within 24 business hours.
+                      {t("contact.messageReceivedDesc")}
                     </p>
                     <Button variant="outline" onClick={() => setIsSubmitted(false)}>
-                      Send Another Message
+                      {t("contact.sendAnother")}
                     </Button>
                   </div>
                 ) : (
                   <>
                     <h2 className="font-display text-2xl font-bold text-foreground mb-6">
-                      Request a Consultation
+                      {t("contact.requestConsultation")}
                     </h2>
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="name">Full Name *</Label>
-                          <Input
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="John Smith"
-                            className={errors.name ? "border-destructive" : ""}
-                          />
-                          {errors.name && (
-                            <p className="text-sm text-destructive">{errors.name}</p>
-                          )}
+                          <Label htmlFor="name">{t("contact.form.name")} *</Label>
+                          <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="John Smith" className={errors.name ? "border-destructive" : ""} />
+                          {errors.name && <p className="text-sm text-destructive">{errors.name}</p>}
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="company">Company *</Label>
-                          <Input
-                            id="company"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleChange}
-                            placeholder="Acme Corporation"
-                            className={errors.company ? "border-destructive" : ""}
-                          />
-                          {errors.company && (
-                            <p className="text-sm text-destructive">{errors.company}</p>
-                          )}
+                          <Label htmlFor="company">{t("contact.form.company")} *</Label>
+                          <Input id="company" name="company" value={formData.company} onChange={handleChange} placeholder="Acme Corporation" className={errors.company ? "border-destructive" : ""} />
+                          {errors.company && <p className="text-sm text-destructive">{errors.company}</p>}
                         </div>
                       </div>
 
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="email">Business Email *</Label>
-                          <Input
-                            id="email"
-                            name="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="john@acme.com"
-                            className={errors.email ? "border-destructive" : ""}
-                          />
-                          {errors.email && (
-                            <p className="text-sm text-destructive">{errors.email}</p>
-                          )}
+                          <Label htmlFor="email">{t("contact.form.businessEmail")} *</Label>
+                          <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="john@acme.com" className={errors.email ? "border-destructive" : ""} />
+                          {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="phone">Phone (Optional)</Label>
-                          <Input
-                            id="phone"
-                            name="phone"
-                            type="tel"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="+1 (234) 567-890"
-                          />
+                          <Label htmlFor="phone">{t("contact.form.phone")}</Label>
+                          <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+1 (234) 567-890" />
                         </div>
                       </div>
 
                       <div className="space-y-2">
-                        <Label htmlFor="message">How can we help? *</Label>
-                        <Textarea
-                          id="message"
-                          name="message"
-                          value={formData.message}
-                          onChange={handleChange}
-                          placeholder="Tell us about your security needs, current challenges, or any questions you have..."
-                          rows={5}
-                          className={errors.message ? "border-destructive" : ""}
-                        />
-                        {errors.message && (
-                          <p className="text-sm text-destructive">{errors.message}</p>
-                        )}
+                        <Label htmlFor="message">{t("contact.form.message")} *</Label>
+                        <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="..." rows={5} className={errors.message ? "border-destructive" : ""} />
+                        {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
                       </div>
 
                       <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                        {isSubmitting ? (
-                          "Sending..."
-                        ) : (
+                        {isSubmitting ? t("contact.form.sending") : (
                           <>
-                            Send Message
+                            {t("contact.form.submit")}
                             <Send className="ml-2 h-4 w-4" />
                           </>
                         )}
                       </Button>
 
                       <p className="font-body text-sm text-muted-foreground text-center">
-                        By submitting this form, you agree to our privacy policy. We'll never share your information.
+                        {t("contact.privacyNote")}
                       </p>
                     </form>
                   </>
