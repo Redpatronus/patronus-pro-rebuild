@@ -21,7 +21,6 @@ const HeroSection = () => {
 
   const stats = [
     { label: t("trust.stats.years"), value: "15+" },
-    { label: t("trust.stats.projects"), value: "2,500+" },
     { label: t("trust.stats.clients"), value: "30+" },
   ];
 
