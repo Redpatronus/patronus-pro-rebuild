@@ -133,8 +133,8 @@ const TrustIndicators = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <p className="font-body text-sm text-muted-foreground uppercase tracking-wider mb-8">
+        <div className="bg-foreground rounded-2xl p-8 lg:p-12 text-center">
+          <p className="font-body text-sm text-background/70 uppercase tracking-wider mb-8">
             Our Trusted Partners
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -144,14 +144,14 @@ const TrustIndicators = () => {
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-card rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300"
+                className="bg-background/10 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background/20 transition-all duration-300"
               >
                 <img 
                   src={partner.logo} 
                   alt={partner.name} 
-                  className="h-12 w-auto object-contain"
+                  className="h-12 w-auto object-contain brightness-0 invert"
                 />
-                <span className="font-body text-sm font-medium text-foreground">
+                <span className="font-body text-sm font-medium text-background">
                   {partner.name}
                 </span>
               </a>
