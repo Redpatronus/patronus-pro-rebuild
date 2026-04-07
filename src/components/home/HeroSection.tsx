@@ -23,7 +23,6 @@ const HeroSection = () => {
     { label: t("trust.stats.years"), value: "15+" },
     { label: t("trust.stats.projects"), value: "2,500+" },
     { label: t("trust.stats.clients"), value: "30+" },
-    { label: t("trust.stats.experts"), value: "50K+" },
   ];
 
   return (
