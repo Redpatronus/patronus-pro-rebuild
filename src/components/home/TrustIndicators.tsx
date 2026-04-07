@@ -144,7 +144,7 @@ const TrustIndicators = () => {
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-background/10 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background/20 transition-all duration-300"
+                className="bg-background/90 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background transition-all duration-300"
               >
                 <img 
                   src={partner.logo} 
