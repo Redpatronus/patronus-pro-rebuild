@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import logoRedpatronus from "@/assets/logo-redpatronus.png";
+import logoRedpatronus from "@/assets/rp-logo.svg";
 
 const XIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">

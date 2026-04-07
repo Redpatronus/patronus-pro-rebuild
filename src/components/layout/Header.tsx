@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguagePicker from "@/components/LanguagePicker";
-import logoRedpatronus from "@/assets/logo-redpatronus.png";
+import logoRedpatronus from "@/assets/rp-logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
