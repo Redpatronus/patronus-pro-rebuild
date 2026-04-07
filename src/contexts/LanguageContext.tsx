@@ -232,6 +232,7 @@ const translations: Record<Language, Record<string, any>> = {
       training: {
         title: "Bezpečnostné školenia",
         description: "Posilnite svoj tím komplexným školením o kybernetickej bezpečnosti a technickými školeniami.",
+      },
     },
     ai: {
       badge: "AI-Powered",
@@ -256,7 +257,6 @@ const translations: Record<Language, Record<string, any>> = {
           description: "24/7 monitoring poháňaný AI, ktorý sa učí základné správanie vášho prostredia a okamžite upozorňuje na anomálie a potenciálne hrozby.",
         },
       },
-    },
     },
     trust: {
       certifications: "Certifikácie a štandardy",
@@ -362,6 +362,7 @@ const translations: Record<Language, Record<string, any>> = {
       training: {
         title: "Sicherheitsschulungen",
         description: "Stärken Sie Ihr Team mit umfassenden Cybersicherheitsschulungen und technischen Trainings.",
+      },
     },
     ai: {
       badge: "KI-gestützt",
@@ -386,7 +387,6 @@ const translations: Record<Language, Record<string, any>> = {
           description: "24/7 KI-gestütztes Monitoring, das das Basisverhalten Ihrer Umgebung lernt und sofort Anomalien und potenzielle Bedrohungen meldet.",
         },
       },
-    },
     },
     trust: {
       certifications: "Zertifizierungen & Standards",
