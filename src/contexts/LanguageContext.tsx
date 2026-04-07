@@ -544,14 +544,34 @@ const translations: Record<Language, Record<string, any>> = {
     },
     trust: {
       certifications: "Certifikácie a štandardy",
+      certificationsLabel: "Certifikácie a súlad",
+      certificationsTitle: "Excelentnosť uznaná v odvetví",
+      certs: {
+        iso: "Informačná bezpečnosť",
+        soc2: "Bezpečnosť a dostupnosť",
+        crest: "Certifikovaný poskytovateľ",
+        oscp: "Certifikovaný tím",
+      },
       stats: {
         years: "Rokov skúseností",
         projects: "Dokončených projektov",
         clients: "Spokojných klientov",
         experts: "Bezpečnostných expertov",
       },
+      statsItems: {
+        years: "Rokov excelentnosti",
+        clients: "Podnikoví klienti",
+        experts: "Bezpečnostní experti",
+        satisfaction: "Spokojnosť klientov",
+      },
+      testimonialsLabel: "Referencie klientov",
       testimonials: "Čo hovoria naši klienti",
-      partners: "Dôverujú nám",
+      testimonial: {
+        quote: "Red Patronus poskytol výnimočné služby hodnotenia bezpečnosti pre našu cloudovú infraštruktúru. Ich dôkladné penetračné testovanie a jasné reporty nám pomohli výrazne posilniť našu bezpečnostnú pozíciu naprieč všetkými poisťovacími operáciami.",
+        author: "Riaditeľ bezpečnosti",
+        company: "Vienna Insurance Group",
+      },
+      partners: "Naši dôveryhodní partneri",
     },
     cta: {
       title: "Pripravení zabezpečiť váš biznis?",
@@ -934,14 +954,34 @@ const translations: Record<Language, Record<string, any>> = {
     },
     trust: {
       certifications: "Zertifizierungen & Standards",
+      certificationsLabel: "Zertifizierungen & Compliance",
+      certificationsTitle: "Branchenanerkannte Exzellenz",
+      certs: {
+        iso: "Informationssicherheit",
+        soc2: "Sicherheit & Verfügbarkeit",
+        crest: "Zertifizierter Anbieter",
+        oscp: "Team-zertifiziert",
+      },
       stats: {
         years: "Jahre Erfahrung",
         projects: "Abgeschlossene Projekte",
         clients: "Zufriedene Kunden",
         experts: "Sicherheitsexperten",
       },
+      statsItems: {
+        years: "Jahre Exzellenz",
+        clients: "Unternehmenskunden",
+        experts: "Sicherheitsexperten",
+        satisfaction: "Kundenzufriedenheit",
+      },
+      testimonialsLabel: "Kundenreferenzen",
       testimonials: "Was unsere Kunden sagen",
-      partners: "Vertraut von",
+      testimonial: {
+        quote: "Red Patronus hat außergewöhnliche Sicherheitsbewertungsdienste für unsere Cloud-Infrastruktur erbracht. Ihre gründlichen Penetrationstests und klaren Berichte haben uns geholfen, unsere Sicherheitslage in allen unseren Versicherungsgeschäften erheblich zu stärken.",
+        author: "Sicherheitsdirektor",
+        company: "Vienna Insurance Group",
+      },
+      partners: "Unsere vertrauenswürdigen Partner",
     },
     cta: {
       title: "Bereit, Ihr Unternehmen zu sichern?",
