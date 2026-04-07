@@ -130,14 +130,34 @@ const translations: Record<Language, Record<string, any>> = {
     },
     trust: {
       certifications: "Certifications & Standards",
+      certificationsLabel: "Certifications & Compliance",
+      certificationsTitle: "Industry-Recognized Excellence",
+      certs: {
+        iso: "Information Security",
+        soc2: "Security & Availability",
+        crest: "Certified Provider",
+        oscp: "Team Certified",
+      },
       stats: {
         years: "Years Experience",
         projects: "Projects Completed",
         clients: "Happy Clients",
         experts: "Security Experts",
       },
+      statsItems: {
+        years: "Years of Excellence",
+        clients: "Enterprise Clients",
+        experts: "Security Experts",
+        satisfaction: "Client Satisfaction",
+      },
+      testimonialsLabel: "Client Testimonials",
       testimonials: "What Our Clients Say",
-      partners: "Trusted By",
+      testimonial: {
+        quote: "Red Patronus provided exceptional security assessment services for our cloud infrastructure. Their thorough penetration testing and clear reporting helped us significantly strengthen our security posture across all our insurance operations.",
+        author: "Security Director",
+        company: "Vienna Insurance Group",
+      },
+      partners: "Our Trusted Partners",
     },
     cta: {
       title: "Ready to Secure Your Business?",
