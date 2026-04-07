@@ -104,6 +104,30 @@ const translations: Record<Language, Record<string, any>> = {
         description: "Empower your team with comprehensive cybersecurity awareness and technical training.",
       },
     },
+    ai: {
+      badge: "AI-Powered",
+      title: "AI-Powered Security Solutions",
+      subtitle: "Harness the power of artificial intelligence to detect threats faster, automate security testing, and stay ahead of sophisticated cyber attacks.",
+      cta: "Explore AI Solutions",
+      features: {
+        pentest: {
+          title: "AI Penetration Testing",
+          description: "Automated, intelligent penetration testing that continuously probes your systems, identifying vulnerabilities with speed and precision beyond manual testing.",
+        },
+        threatIntel: {
+          title: "AI Threat Intelligence",
+          description: "Real-time threat intelligence powered by machine learning, analyzing global threat data to predict and prevent attacks before they happen.",
+        },
+        autoResponse: {
+          title: "Automated Incident Response",
+          description: "AI-driven incident response that detects, contains, and remediates security incidents in seconds, minimizing damage and downtime.",
+        },
+        continuous: {
+          title: "Continuous Security Monitoring",
+          description: "24/7 AI-powered monitoring that learns your environment's baseline behavior and instantly flags anomalies and potential threats.",
+        },
+      },
+    },
     trust: {
       certifications: "Certifications & Standards",
       stats: {
@@ -208,7 +232,31 @@ const translations: Record<Language, Record<string, any>> = {
       training: {
         title: "Bezpečnostné školenia",
         description: "Posilnite svoj tím komplexným školením o kybernetickej bezpečnosti a technickými školeniami.",
+    },
+    ai: {
+      badge: "AI-Powered",
+      title: "Bezpečnostné riešenia poháňané AI",
+      subtitle: "Využite silu umelej inteligencie na rýchlejšiu detekciu hrozieb, automatizáciu bezpečnostného testovania a udržanie náskoku pred sofistikovanými kybernetickými útokmi.",
+      cta: "Preskúmať AI riešenia",
+      features: {
+        pentest: {
+          title: "AI penetračné testovanie",
+          description: "Automatizované, inteligentné penetračné testovanie, ktoré nepretržite skúma vaše systémy a identifikuje zraniteľnosti s rýchlosťou a presnosťou presahujúcou manuálne testovanie.",
+        },
+        threatIntel: {
+          title: "AI analýza hrozieb",
+          description: "Analýza hrozieb v reálnom čase poháňaná strojovým učením, analyzujúca globálne údaje o hrozbách na predpovedanie a prevenciu útokov skôr, ako nastanú.",
+        },
+        autoResponse: {
+          title: "Automatizovaná reakcia na incidenty",
+          description: "Reakcia na incidenty riadená AI, ktorá deteguje, izoluje a odstraňuje bezpečnostné incidenty v priebehu sekúnd, minimalizujúc škody a výpadky.",
+        },
+        continuous: {
+          title: "Nepretržitý bezpečnostný monitoring",
+          description: "24/7 monitoring poháňaný AI, ktorý sa učí základné správanie vášho prostredia a okamžite upozorňuje na anomálie a potenciálne hrozby.",
+        },
       },
+    },
     },
     trust: {
       certifications: "Certifikácie a štandardy",
@@ -314,7 +362,31 @@ const translations: Record<Language, Record<string, any>> = {
       training: {
         title: "Sicherheitsschulungen",
         description: "Stärken Sie Ihr Team mit umfassenden Cybersicherheitsschulungen und technischen Trainings.",
+    },
+    ai: {
+      badge: "KI-gestützt",
+      title: "KI-gestützte Sicherheitslösungen",
+      subtitle: "Nutzen Sie die Kraft der künstlichen Intelligenz, um Bedrohungen schneller zu erkennen, Sicherheitstests zu automatisieren und raffinierten Cyberangriffen einen Schritt voraus zu sein.",
+      cta: "KI-Lösungen erkunden",
+      features: {
+        pentest: {
+          title: "KI-Penetrationstests",
+          description: "Automatisierte, intelligente Penetrationstests, die Ihre Systeme kontinuierlich prüfen und Schwachstellen mit Geschwindigkeit und Präzision identifizieren, die über manuelle Tests hinausgehen.",
+        },
+        threatIntel: {
+          title: "KI-Bedrohungsanalyse",
+          description: "Echtzeit-Bedrohungsanalyse mit maschinellem Lernen, die globale Bedrohungsdaten analysiert, um Angriffe vorherzusagen und zu verhindern.",
+        },
+        autoResponse: {
+          title: "Automatisierte Incident Response",
+          description: "KI-gesteuerte Incident Response, die Sicherheitsvorfälle in Sekunden erkennt, eindämmt und behebt und so Schäden und Ausfallzeiten minimiert.",
+        },
+        continuous: {
+          title: "Kontinuierliches Sicherheitsmonitoring",
+          description: "24/7 KI-gestütztes Monitoring, das das Basisverhalten Ihrer Umgebung lernt und sofort Anomalien und potenzielle Bedrohungen meldet.",
+        },
       },
+    },
     },
     trust: {
       certifications: "Zertifizierungen & Standards",
