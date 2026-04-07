@@ -10,6 +10,10 @@ const features = [
     description: "24/7 monitoring of your systems and networks with continuous internal security scanning and automatic web security scanning.",
   },
   {
+    title: "AI-Powered Penetration Testing",
+    description: "Use AI-driven tools to continuously test your defenses, simulating real-world attacks and identifying weaknesses before adversaries do.",
+  },
+  {
     title: "DevSecOps Integration",
     description: "Seamlessly integrate security into your development lifecycle with automated security testing and continuous monitoring.",
   },
