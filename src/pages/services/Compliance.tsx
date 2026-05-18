@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Business Continuity Plan",
-    description: "Annual Testing: DORA strictly requires you to test all ICT business continuity and disaster recovery plans at least once a year.",
+    description: "We help you design, implement, and annually test your ICT business continuity and disaster recovery plans — meeting DORA's strict requirement to validate all plans at least once a year.",
   },
 ];
 
