@@ -19,10 +19,9 @@ const TrustIndicators = () => {
 
   const certifications = [
     { name: "ISO 27001", descKey: "trust.certs.iso" },
-    { name: "SOC 2 Type II", descKey: "trust.certs.soc2" },
-    { name: "CREST", descKey: "trust.certs.crest" },
-    { name: "OSCP/OSCE", descKey: "trust.certs.oscp" },
+    { name: "DORA Compliant", descKey: "trust.certs.dora" },
   ];
+
 
   const stats = [
     { icon: Shield, value: "15+", labelKey: "trust.statsItems.years" },
@@ -44,7 +43,7 @@ const TrustIndicators = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16 max-w-3xl mx-auto">
           {certifications.map((cert, index) => (
             <div key={index} className="bg-card rounded-xl p-6 text-center shadow-card border border-border">
               <Award className="h-8 w-8 text-primary mx-auto mb-3" />
@@ -53,6 +52,7 @@ const TrustIndicators = () => {
             </div>
           ))}
         </div>
+
 
         {/* Stats */}
         <div className="bg-primary rounded-2xl p-8 lg:p-12 mb-16">
