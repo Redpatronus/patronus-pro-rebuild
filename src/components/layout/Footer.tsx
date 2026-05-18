@@ -154,24 +154,10 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/10 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex justify-center items-center">
             <p className="font-body text-sm text-background/60">
               © {new Date().getFullYear()} Red Patronus. {t("footer.copyright")}
             </p>
-            <div className="flex gap-6">
-              <a
-                href="#"
-                className="font-body text-sm text-background/60 hover:text-background transition-colors"
-              >
-                {t("footer.privacy")}
-              </a>
-              <a
-                href="#"
-                className="font-body text-sm text-background/60 hover:text-background transition-colors"
-              >
-                {t("footer.terms")}
-              </a>
-            </div>
           </div>
         </div>
       </div>
