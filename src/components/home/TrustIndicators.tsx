@@ -7,7 +7,7 @@ import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 import vigLogo from "@/assets/partners/vig-logo.svg";
 
 const trustedPartners = [
-  { name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
+  //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
@@ -60,7 +60,9 @@ const TrustIndicators = () => {
             {stats.map((stat, index) => (
               <div key={index}>
                 <stat.icon className="h-8 w-8 text-primary-foreground/80 mx-auto mb-3" />
-                <div className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-1">{stat.value}</div>
+                <div className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-1">
+                  {stat.value}
+                </div>
                 <div className="font-body text-sm text-primary-foreground/80">{t(stat.labelKey)}</div>
               </div>
             ))}
@@ -77,7 +79,7 @@ const TrustIndicators = () => {
               {t("trust.testimonials")}
             </h2>
           </div>
-          
+
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border max-w-4xl mx-auto">
             <Quote className="h-10 w-10 text-primary/30 mb-6" />
             <blockquote className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8 italic">
@@ -85,14 +87,22 @@ const TrustIndicators = () => {
             </blockquote>
             <div className="flex items-center justify-between flex-wrap gap-4">
               <div>
-                <p className="font-display font-semibold text-foreground">
-                  {t("trust.testimonial.author")}
-                </p>
-                <a href="https://vig.cz/" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                <p className="font-display font-semibold text-foreground">{t("trust.testimonial.author")}</p>
+                <a
+                  href="https://vig.cz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
                   {t("trust.testimonial.company")}
                 </a>
               </div>
-              <a href="https://vig.cz/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+              <a
+                href="https://vig.cz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
                 <img src={vigLogo} alt="Vienna Insurance Group" className="h-10 w-auto object-contain" />
               </a>
             </div>
@@ -101,9 +111,7 @@ const TrustIndicators = () => {
 
         {/* Partners */}
         <div className="bg-foreground rounded-2xl p-8 lg:p-12 text-center">
-          <p className="font-body text-sm text-background/70 uppercase tracking-wider mb-8">
-            {t("trust.partners")}
-          </p>
+          <p className="font-body text-sm text-background/70 uppercase tracking-wider mb-8">{t("trust.partners")}</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {trustedPartners.map((partner, index) => (
               <a
