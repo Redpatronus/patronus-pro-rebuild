@@ -7,30 +7,36 @@ import { Target, ArrowRight, CheckCircle, Shield, Crosshair, Bug } from "lucide-
 const features = [
   {
     title: "Red Team Engagements",
-    description: "Comprehensive vulnerability assessments simulating advanced cyber attacks to evaluate your IT infrastructure, applications, and networks.",
+    description:
+      "Comprehensive vulnerability assessments simulating advanced cyber attacks to evaluate your IT infrastructure, applications, and networks.",
   },
   {
     title: "AI-Powered Penetration Testing",
-    description: "Leverage artificial intelligence to automate and enhance penetration testing, uncovering vulnerabilities faster and more thoroughly than traditional methods.",
+    description:
+      "Leverage artificial intelligence to automate and enhance penetration testing, uncovering vulnerabilities faster and more thoroughly than traditional methods.",
   },
   {
     title: "Web Penetration Tests",
-    description: "Testing by OWASP methodology to identify vulnerabilities in web applications before malicious actors can exploit them.",
+    description:
+      "Testing by OWASP methodology to identify vulnerabilities in web applications before malicious actors can exploit them.",
   },
   {
     title: "Infrastructure Penetration Tests",
-    description: "Comprehensive network and infrastructure security assessments to identify weaknesses in your environment.",
+    description:
+      "Comprehensive network and infrastructure security assessments to identify weaknesses in your environment.",
   },
   {
     title: "Attack Simulations & Post-Exploitation",
-    description: "Beyond initial penetration, we conduct post-exploitation exercises to demonstrate how an attacker might pivot within your environment.",
+    description:
+      "Beyond initial penetration, we conduct post-exploitation exercises to demonstrate how an attacker might pivot within your environment.",
   },
   {
     title: "Tailored Engagement Levels",
-    description: "Customized testing approaches from black-box to white-box assessments based on your specific requirements.",
+    description:
+      "Customized testing approaches from black-box to white-box assessments based on your specific requirements.",
   },
   {
-    title: "Social Engineering Tests",
+    title: "Social Engineering Tests & ",
     description: "Testing human elements through phishing, vishing, and physical security assessments.",
   },
 ];
@@ -52,15 +58,15 @@ const OffensiveSecurity = () => {
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
                 <Target className="h-4 w-4 text-primary" />
-                <span className="font-body text-sm font-medium text-accent-foreground">
-                  Offensive Security
-                </span>
+                <span className="font-body text-sm font-medium text-accent-foreground">Offensive Security</span>
               </div>
               <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
                 Offensive Security Services
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
-                Our Offensive Security Services are designed to rigorously assess your organization's security posture by simulating real-world cyber attacks. Our expert red team works to identify vulnerabilities, test your defenses, and provide actionable insights.
+                Our Offensive Security Services are designed to rigorously assess your organization's security posture
+                by simulating real-world cyber attacks. Our expert red team works to identify vulnerabilities, test your
+                defenses, and provide actionable insights.
               </p>
             </div>
           </div>
@@ -78,12 +84,8 @@ const OffensiveSecurity = () => {
                   <div className="p-2 bg-accent rounded-lg inline-block mb-4">
                     <CheckCircle className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="font-body text-sm text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <h3 className="font-display text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
+                  <p className="font-body text-sm text-muted-foreground">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -97,9 +99,15 @@ const OffensiveSecurity = () => {
               Ready to Test Your Defenses?
             </h2>
             <p className="font-body text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Contact us to discuss how our offensive security services can help identify vulnerabilities in your environment.
+              Contact us to discuss how our offensive security services can help identify vulnerabilities in your
+              environment.
             </p>
-            <Button size="lg" variant="secondary" asChild className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <Button
+              size="lg"
+              variant="secondary"
+              asChild
+              className="bg-background text-primary hover:bg-background/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
               <Link to="/contact">
                 Request a Quote
                 <ArrowRight className="ml-2 h-4 w-4" />
