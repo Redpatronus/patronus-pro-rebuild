@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Business Continuity Plan",
-    description: "Develop and maintain robust business continuity and disaster recovery plans aligned with DORA requirements, ensuring operational resilience and rapid recovery from ICT disruptions.",
+    description: "Annual Testing: DORA strictly requires you to test all ICT business continuity and disaster recovery plans at least once a year.",
   },
 ];
 
