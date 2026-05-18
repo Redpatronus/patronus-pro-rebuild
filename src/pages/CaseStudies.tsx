@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Shield, CheckCircle, Award, Quote } from "lucide-react";
+import { ArrowRight, Building2, Shield, CheckCircle, Quote } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CaseStudies = () => {
@@ -10,7 +10,6 @@ const CaseStudies = () => {
 
   const studyKeys = ["financial", "healthcare", "technology"];
   const testimonialKeys = ["t1", "t2"];
-  const certKeys = ["iso", "soc", "crest", "pci"];
 
   return (
     <>
@@ -121,27 +120,6 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        <section className="py-16 lg:py-24 bg-background">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="font-display text-2xl lg:text-3xl font-bold text-foreground mb-4">
-                {t("caseStudies.certificationsTitle")}
-              </h2>
-              <p className="font-body text-muted-foreground">
-                {t("caseStudies.certificationsSubtitle")}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {certKeys.map((key) => (
-                <div key={key} className="bg-surface rounded-xl p-6 text-center border border-border">
-                  <Award className="h-8 w-8 text-primary mx-auto mb-3" />
-                  <div className="font-display text-lg font-semibold text-foreground">{t(`caseStudies.certifications.${key}.name`)}</div>
-                  <div className="font-body text-sm text-muted-foreground">{t(`caseStudies.certifications.${key}.desc`)}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="py-16 lg:py-24 bg-primary">
           <div className="container mx-auto px-4 lg:px-8 text-center">
