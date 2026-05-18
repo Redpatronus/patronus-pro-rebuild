@@ -92,7 +92,7 @@ const About = () => {
 
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl mx-auto">
               <div>
                 <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
                   {t("about.teamTitle")}
@@ -100,35 +100,12 @@ const About = () => {
                 <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                   {t("about.teamDesc")}
                 </p>
-                <div className="grid grid-cols-2 gap-6 mb-8">
-                  <div>
-                    <div className="font-display text-3xl font-bold text-primary">50+</div>
-                    <div className="font-body text-sm text-muted-foreground">{t("about.securityExperts")}</div>
-                  </div>
-                  <div>
-                    <div className="font-display text-3xl font-bold text-primary">200+</div>
-                    <div className="font-body text-sm text-muted-foreground">{t("about.certificationsHeld")}</div>
-                  </div>
-                </div>
                 <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <Link to="/contact">
                     {t("about.joinTeam")}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-              </div>
-              <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 lg:p-12">
-                <h3 className="font-display text-xl font-semibold text-foreground mb-6">
-                  {t("about.teamCertifications")}
-                </h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {["OSCP", "OSEP", "OSCE", "GPEN", "GWAPT", "CISSP", "CISM", "CEH"].map((cert) => (
-                    <div key={cert} className="flex items-center gap-2">
-                      <Award className="h-5 w-5 text-primary" />
-                      <span className="font-body text-sm font-medium text-foreground">{cert}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
