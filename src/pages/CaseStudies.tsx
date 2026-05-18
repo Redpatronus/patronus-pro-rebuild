@@ -34,22 +34,6 @@ const CaseStudies = () => {
           </div>
         </section>
 
-        <section className="py-12 bg-primary">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-              {[
-                { value: "2,500+", key: "assessments" },
-                { value: "50,000+", key: "vulnerabilities" },
-                { value: "99%", key: "retention" },
-              ].map((stat) => (
-                <div key={stat.key}>
-                  <div className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground">{stat.value}</div>
-                  <div className="font-body text-sm text-primary-foreground/80">{t(`caseStudies.stats.${stat.key}`)}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
