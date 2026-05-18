@@ -69,7 +69,7 @@ const TrustIndicators = () => {
           </div>
         </div>
 
-        {/* Client Testimonial 
+        {/* Client Testimonial */}
         <div className="mb-16">
           <div className="text-center mb-8">
             <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
@@ -79,7 +79,7 @@ const TrustIndicators = () => {
               {t("trust.testimonials")}
             </h2>
           </div>
-        */}
+
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border max-w-4xl mx-auto">
             <Quote className="h-10 w-10 text-primary/30 mb-6" />
             <blockquote className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8 italic">
