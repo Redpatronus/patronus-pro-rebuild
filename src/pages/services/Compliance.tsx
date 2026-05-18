@@ -29,6 +29,10 @@ const features = [
     title: "Audit Support",
     description: "Complete audit support and documentation to help you pass DORA compliance assessments with confidence.",
   },
+  {
+    title: "Business Continuity Plan",
+    description: "Develop and maintain robust business continuity and disaster recovery plans aligned with DORA requirements, ensuring operational resilience and rapid recovery from ICT disruptions.",
+  },
 ];
 
 const Compliance = () => {
