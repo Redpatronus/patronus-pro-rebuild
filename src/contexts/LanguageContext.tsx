@@ -326,7 +326,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Financial Services",
           title: "Global Insurance Company Transformation",
           challenge:
-            "A major global bank needed comprehensive security assessment across 200+ applications before a major digital transformation initiative.",
+            "Helping an insurance company move from on-premise to cloud infrastructure while securing the new environment.",
           solution:
             "Conducted phased penetration testing program, red team engagement, and security architecture review over 12 months.",
           results: [
@@ -798,7 +798,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Finančné služby",
           title: "Transformácia globálnej poisťovne",
           challenge:
-            "Veľká globálna banka potrebovala komplexné bezpečnostné hodnotenie naprieč 200+ aplikáciami pred veľkou iniciatívou digitálnej transformácie.",
+            "Pomoc poisťovni pri prechode z on-premise na cloudovú infraštruktúru a zabezpečenie nového prostredia.",
           solution:
             "Realizovali sme fázovaný program penetračného testovania, red team zákazku a revíziu bezpečnostnej architektúry počas 12 mesiacov.",
           results: [
@@ -1271,7 +1271,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Finanzdienstleistungen",
           title: "Transformation einer globalen Versicherungsgesellschaft",
           challenge:
-            "Eine große Globalbank benötigte eine umfassende Sicherheitsbewertung über 200+ Anwendungen vor einer großen digitalen Transformationsinitiative.",
+            "Unterstützung einer Versicherungsgesellschaft beim Wechsel von On-Premise- zu Cloud-Infrastruktur und Absicherung der neuen Umgebung.",
           solution:
             "Durchführung eines phasenweisen Penetrationstest-Programms, Red-Team-Engagement und Überprüfung der Sicherheitsarchitektur über 12 Monate.",
           results: [
@@ -1745,7 +1745,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Services financiers",
           title: "Transformation d'une compagnie d'assurance mondiale",
           challenge:
-            "Une grande banque mondiale avait besoin d'une évaluation complète de la sécurité sur 200+ applications avant une grande initiative de transformation numérique.",
+            "Accompagnement d'une compagnie d'assurance dans sa migration d'une infrastructure on-premise vers le cloud, avec sécurisation du nouvel environnement.",
           solution:
             "Programme de tests d'intrusion par phases, engagement red team et revue de l'architecture de sécurité sur 12 mois.",
           results: [
