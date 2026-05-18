@@ -96,7 +96,6 @@ const Contact = () => {
     t("contact.whyItems.0"),
     t("contact.whyItems.1"),
     t("contact.whyItems.2"),
-    t("contact.whyItems.3"),
   ];
 
   return (

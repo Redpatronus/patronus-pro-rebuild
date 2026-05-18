@@ -677,7 +677,6 @@ const translations: Record<Language, Record<string, any>> = {
       whyChoose: "Prečo si vybrať Red Patronus",
       whyItems: [
         "15+ rokov skúseností v podnikovej bezpečnosti",
-        "Dôveruje nám 300+ podnikových spoločností",
         "Popredné certifikácie v odvetví",
         "Dedikovaný správa účtov",
       ],
@@ -1149,7 +1148,6 @@ const translations: Record<Language, Record<string, any>> = {
       whyChoose: "Warum Red Patronus wählen",
       whyItems: [
         "15+ Jahre Erfahrung in Unternehmenssicherheit",
-        "Vertraut von 300+ Unternehmenskunden",
         "Branchenführende Zertifizierungen",
         "Dediziertes Account-Management",
       ],
@@ -1622,7 +1620,6 @@ const translations: Record<Language, Record<string, any>> = {
       whyChoose: "Pourquoi choisir Red Patronus",
       whyItems: [
         "15+ ans d'expérience en sécurité d'entreprise",
-        "Approuvé par 300+ entreprises",
         "Certifications leaders du secteur",
         "Gestion de compte dédiée",
       ],
