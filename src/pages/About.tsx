@@ -15,8 +15,6 @@ const About = () => {
     { icon: Lock, key: "confidentiality" },
   ];
 
-  const expertiseKeys = ["financial", "healthcare", "technology", "manufacturing", "retail", "government"];
-  const expertiseYears = ["15+", "12+", "15+", "10+", "12+", "8+"];
 
   return (
     <>
@@ -44,7 +42,7 @@ const About = () => {
 
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="max-w-3xl mx-auto">
               <div>
                 <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-6">
                   {t("about.mission.title")}
@@ -61,19 +59,6 @@ const About = () => {
                     <div className="font-display text-2xl font-bold text-foreground">{t("about.globalReach")}</div>
                     <div className="font-body text-muted-foreground">{t("about.globalReachDesc")}</div>
                   </div>
-                </div>
-              </div>
-              <div className="bg-surface rounded-2xl p-8 lg:p-12">
-                <h3 className="font-display text-xl font-semibold text-foreground mb-6">
-                  {t("about.industryExpertise")}
-                </h3>
-                <div className="space-y-4">
-                  {expertiseKeys.map((key, index) => (
-                    <div key={key} className="flex items-center justify-between py-3 border-b border-border last:border-0">
-                      <span className="font-body text-foreground">{t(`about.expertise.${key}`)}</span>
-                      <span className="font-body text-sm text-primary font-medium">{expertiseYears[index]} years</span>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>
