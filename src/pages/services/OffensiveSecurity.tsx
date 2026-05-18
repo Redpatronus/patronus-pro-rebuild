@@ -36,7 +36,7 @@ const features = [
       "Customized testing approaches from black-box to white-box assessments based on your specific requirements.",
   },
   {
-    title: "Social Engineering Tests & ",
+    title: "Social Engineering Tests & Phishing campaigns",
     description: "Testing human elements through phishing, vishing, and physical security assessments.",
   },
 ];
