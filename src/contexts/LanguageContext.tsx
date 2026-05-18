@@ -150,6 +150,7 @@ const translations: Record<Language, Record<string, any>> = {
         experts: "Security Experts",
         satisfaction: "Client Satisfaction",
       },
+      /*
       testimonialsLabel: "Client Testimonials",
       testimonials: "What Our Clients Say",
       testimonial: {
@@ -159,6 +160,7 @@ const translations: Record<Language, Record<string, any>> = {
       },
       partners: "Our Trusted Partners",
     },
+    */
     cta: {
       title: "Ready to Secure Your Business?",
       subtitle: "Get in touch with our security experts today and discover how we can protect your organization from cyber threats.",
