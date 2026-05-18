@@ -12,6 +12,7 @@ const languages: { code: Language; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
   { code: "sk", label: "Slovenčina", flag: "🇸🇰" },
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
+  { code: "fr", label: "Français", flag: "🇫🇷" },
 ];
 
 const LanguagePicker = () => {
