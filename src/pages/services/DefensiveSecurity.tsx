@@ -11,7 +11,7 @@ const features = [
       "24/7 monitoring of your systems and networks with continuous internal security scanning and automatic web security scanning.",
   },
   {
-    title: "AI-Powered Infrastructure & Application security",
+    title: "AI-Powered Infrastructure & Application Security",
     description:
       "Use AI-driven tools to continuously test your defenses, simulating real-world attacks and identifying weaknesses before adversaries do.",
   },
