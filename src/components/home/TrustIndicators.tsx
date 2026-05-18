@@ -69,45 +69,7 @@ const TrustIndicators = () => {
           </div>
         </div>
 
-        {/* Client Testimonial */}
-        <div className="mb-16">
-          <div className="text-center mb-8">
-            <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
-              {t("trust.testimonialsLabel")}
-            </span>
-            <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-3">
-              {t("trust.testimonials")}
-            </h2>
-          </div>
-
-          <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border max-w-4xl mx-auto">
-            <Quote className="h-10 w-10 text-primary/30 mb-6" />
-            <blockquote className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8 italic">
-              "{t("trust.testimonial.quote")}"
-            </blockquote>
-            <div className="flex items-center justify-between flex-wrap gap-4">
-              <div>
-                <p className="font-display font-semibold text-foreground">{t("trust.testimonial.author")}</p>
-                <a
-                  href="https://vig.cz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {t("trust.testimonial.company")}
-                </a>
-              </div>
-              <a
-                href="https://vig.cz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-              >
-                <img src={vigLogo} alt="Vienna Insurance Group" className="h-10 w-auto object-contain" />
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* Client Testimonial — hidden */}
 
         {/* Partners */}
         <div className="bg-foreground rounded-2xl p-8 lg:p-12 text-center">
