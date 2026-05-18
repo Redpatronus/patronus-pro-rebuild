@@ -324,7 +324,7 @@ const translations: Record<Language, Record<string, any>> = {
       studies: {
         financial: {
           industry: "Financial Services",
-          title: "Global Bank Security Transformation",
+          title: "Global Insurance Company Transformation",
           challenge:
             "A major global bank needed comprehensive security assessment across 200+ applications before a major digital transformation initiative.",
           solution:
@@ -796,7 +796,7 @@ const translations: Record<Language, Record<string, any>> = {
       studies: {
         financial: {
           industry: "Finančné služby",
-          title: "Bezpečnostná transformácia globálnej banky",
+          title: "Transformácia globálnej poisťovne",
           challenge:
             "Veľká globálna banka potrebovala komplexné bezpečnostné hodnotenie naprieč 200+ aplikáciami pred veľkou iniciatívou digitálnej transformácie.",
           solution:
@@ -1269,7 +1269,7 @@ const translations: Record<Language, Record<string, any>> = {
       studies: {
         financial: {
           industry: "Finanzdienstleistungen",
-          title: "Sicherheitstransformation einer Globalbank",
+          title: "Transformation einer globalen Versicherungsgesellschaft",
           challenge:
             "Eine große Globalbank benötigte eine umfassende Sicherheitsbewertung über 200+ Anwendungen vor einer großen digitalen Transformationsinitiative.",
           solution:
@@ -1743,7 +1743,7 @@ const translations: Record<Language, Record<string, any>> = {
       studies: {
         financial: {
           industry: "Services financiers",
-          title: "Transformation de la sécurité d'une banque mondiale",
+          title: "Transformation d'une compagnie d'assurance mondiale",
           challenge:
             "Une grande banque mondiale avait besoin d'une évaluation complète de la sécurité sur 200+ applications avant une grande initiative de transformation numérique.",
           solution:
