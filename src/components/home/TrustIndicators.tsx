@@ -20,6 +20,7 @@ const TrustIndicators = () => {
   const certifications = [
     { name: "ISO 27001", descKey: "trust.certs.iso" },
     { name: "DORA Compliant", descKey: "trust.certs.dora" },
+    { name: "NIS2 Compliant", descKey: "trust.certs.nis2" },
   ];
 
 
