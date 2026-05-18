@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import logoRedpatronus from "@/assets/rp-logo.svg";
+import logoRedpatronus from "@/assets/rp-logo-footer.svg";
 
 
 const Footer = () => {
