@@ -44,7 +44,7 @@ const TrustIndicators = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 mb-16 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mb-16 max-w-4xl mx-auto">
           {certifications.map((cert, index) => (
             <div key={index} className="bg-card rounded-xl p-6 text-center shadow-card border border-border">
               <Award className="h-8 w-8 text-primary mx-auto mb-3" />

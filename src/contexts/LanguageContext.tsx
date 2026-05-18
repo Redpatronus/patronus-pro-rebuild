@@ -140,6 +140,7 @@ const translations: Record<Language, Record<string, any>> = {
       certs: {
         iso: "Information Security",
         dora: "EU Digital Operational Resilience Act",
+        nis2: "EU Network & Information Security Directive",
         soc2: "Security & Availability",
         crest: "Certified Provider",
         oscp: "Team Certified",
@@ -615,6 +616,7 @@ const translations: Record<Language, Record<string, any>> = {
       certs: {
         iso: "Informačná bezpečnosť",
         dora: "Nariadenie EÚ o digitálnej prevádzkovej odolnosti",
+        nis2: "Smernica EÚ o sieťovej a informačnej bezpečnosti",
         soc2: "Bezpečnosť a dostupnosť",
         crest: "Certifikovaný poskytovateľ",
         oscp: "Certifikovaný tím",
@@ -1086,6 +1088,7 @@ const translations: Record<Language, Record<string, any>> = {
       certs: {
         iso: "Informationssicherheit",
         dora: "EU-Verordnung über digitale operationale Resilienz",
+        nis2: "EU-Richtlinie zur Netz- und Informationssicherheit",
         soc2: "Sicherheit & Verfügbarkeit",
         crest: "Zertifizierter Anbieter",
         oscp: "Team-zertifiziert",
@@ -1558,6 +1561,7 @@ const translations: Record<Language, Record<string, any>> = {
       certs: {
         iso: "Sécurité de l'information",
         dora: "Règlement européen sur la résilience opérationnelle numérique",
+        nis2: "Directive UE sur la sécurité des réseaux et de l'information",
         soc2: "Sécurité et disponibilité",
         crest: "Fournisseur certifié",
         oscp: "Équipe certifiée",
