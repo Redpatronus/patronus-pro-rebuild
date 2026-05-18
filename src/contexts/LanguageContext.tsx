@@ -340,7 +340,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Healthcare",
           title: "Healthcare System HIPAA Compliance",
           challenge:
-            "Regional healthcare provider with 15 hospitals needed to assess security posture and achieve HIPAA compliance.",
+            "Helping a regional healthcare provider secure their HIPAA compliant data.",
           solution:
             "Performed network penetration testing, application security assessment, and compliance gap analysis across all facilities.",
           results: [
@@ -812,7 +812,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Zdravotníctvo",
           title: "Súlad zdravotníckeho systému s HIPAA",
           challenge:
-            "Regionálny poskytovateľ zdravotnej starostlivosti s 15 nemocnicami potreboval posúdiť bezpečnostnú pozíciu a dosiahnuť súlad s HIPAA.",
+            "Pomoc regionálnemu poskytovateľovi zdravotnej starostlivosti pri zabezpečení ich HIPAA-kompatibilných dát.",
           solution:
             "Vykonali sme sieťové penetračné testovanie, hodnotenie bezpečnosti aplikácií a analýzu medzier v súlade naprieč všetkými zariadeniami.",
           results: [
@@ -1285,7 +1285,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Gesundheitswesen",
           title: "HIPAA-Compliance im Gesundheitssystem",
           challenge:
-            "Ein regionaler Gesundheitsversorger mit 15 Krankenhäusern musste die Sicherheitslage bewerten und HIPAA-Compliance erreichen.",
+            "Unterstützung eines regionalen Gesundheitsversorgers bei der Absicherung seiner HIPAA-konformen Daten.",
           solution:
             "Durchführung von Netzwerk-Penetrationstests, Anwendungssicherheitsbewertung und Compliance-Lückenanalyse über alle Einrichtungen.",
           results: [
@@ -1759,7 +1759,7 @@ const translations: Record<Language, Record<string, any>> = {
           industry: "Santé",
           title: "Conformité HIPAA d'un système de santé",
           challenge:
-            "Un fournisseur régional de soins de santé avec 15 hôpitaux devait évaluer sa posture de sécurité et atteindre la conformité HIPAA.",
+            "Accompagnement d'un fournisseur régional de soins de santé pour sécuriser ses données conformes HIPAA.",
           solution:
             "Tests d'intrusion réseau, évaluation de la sécurité des applications et analyse des écarts de conformité dans tous les établissements.",
           results: [
