@@ -205,7 +205,6 @@ const translations: Record<Language, Record<string, any>> = {
       whyChoose: "Why Choose Red Patronus",
       whyItems: [
         "15+ years of enterprise security experience",
-        "Trusted by 300+ enterprise companies",
         "Industry-leading certifications",
         "Dedicated account management",
       ],
