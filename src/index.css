@@ -36,16 +36,31 @@ All colors MUST be HSL.
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
     --ring: 352 54% 34%;
 
-    --radius: 0.5rem;
+    --radius: 0.625rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 25%;
-    --sidebar-primary: 352 54% 34%;
-    --sidebar-primary-foreground: 0 0% 100%;
+    /* Surfaces & elevation */
+    --surface: 0 0% 97.5%;
+    --surface-elevated: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(352 54% 34%) 0%, hsl(352 60% 42%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 97.5%) 100%);
+
+    /* Shadows */
+    --shadow-xs: 0 1px 2px 0 hsl(0 0% 0% / 0.04);
+    --shadow-sm: 0 1px 3px 0 hsl(0 0% 0% / 0.06), 0 1px 2px -1px hsl(0 0% 0% / 0.04);
+    --shadow-md: 0 4px 12px -2px hsl(0 0% 0% / 0.06), 0 2px 4px -2px hsl(0 0% 0% / 0.04);
+    --shadow-lg: 0 16px 40px -12px hsl(0 0% 0% / 0.10), 0 4px 12px -4px hsl(0 0% 0% / 0.05);
+    --shadow-primary: 0 12px 28px -10px hsl(352 54% 34% / 0.28);
+
+    /* Motion */
+    --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-base: 220ms var(--ease-out-soft);
+
     --sidebar-accent: 0 0% 95%;
     --sidebar-accent-foreground: 0 0% 15%;
     --sidebar-border: 0 0% 90%;
