@@ -342,7 +342,7 @@ const translations: Record<Language, Record<string, any>> = {
           challenge:
             "Helping a regional healthcare provider secure their HIPAA compliant data.",
           solution:
-            "Performed network penetration testing, application security assessment, and compliance gap analysis across all facilities.",
+            "Designed data protection controls, secured patient data stores, and validated safeguards through targeted security testing to maintain HIPAA compliance.",
           results: [
             "Secured 2M+ patient records",
             "Full HIPAA compliance achieved",
@@ -814,7 +814,7 @@ const translations: Record<Language, Record<string, any>> = {
           challenge:
             "Pomoc regionálnemu poskytovateľovi zdravotnej starostlivosti pri zabezpečení ich HIPAA-kompatibilných dát.",
           solution:
-            "Vykonali sme sieťové penetračné testovanie, hodnotenie bezpečnosti aplikácií a analýzu medzier v súlade naprieč všetkými zariadeniami.",
+            "Navrhli sme kontroly ochrany dát, zabezpečili úložiská pacientskych údajov a overili opatrenia cieleným bezpečnostným testovaním na udržanie súladu s HIPAA.",
           results: [
             "Zabezpečených 2M+ záznamov pacientov",
             "Dosiahnutý plný súlad s HIPAA",
@@ -1287,7 +1287,7 @@ const translations: Record<Language, Record<string, any>> = {
           challenge:
             "Unterstützung eines regionalen Gesundheitsversorgers bei der Absicherung seiner HIPAA-konformen Daten.",
           solution:
-            "Durchführung von Netzwerk-Penetrationstests, Anwendungssicherheitsbewertung und Compliance-Lückenanalyse über alle Einrichtungen.",
+            "Konzeption von Datenschutzkontrollen, Absicherung der Patientendatenspeicher und Validierung der Maßnahmen durch gezielte Sicherheitstests zur Aufrechterhaltung der HIPAA-Konformität.",
           results: [
             "2M+ Patientenakten gesichert",
             "Vollständige HIPAA-Compliance erreicht",
@@ -1761,7 +1761,7 @@ const translations: Record<Language, Record<string, any>> = {
           challenge:
             "Accompagnement d'un fournisseur régional de soins de santé pour sécuriser ses données conformes HIPAA.",
           solution:
-            "Tests d'intrusion réseau, évaluation de la sécurité des applications et analyse des écarts de conformité dans tous les établissements.",
+            "Conception de contrôles de protection des données, sécurisation des dépôts de données patients et validation des mesures par des tests de sécurité ciblés pour maintenir la conformité HIPAA.",
           results: [
             "2M+ dossiers patients sécurisés",
             "Conformité HIPAA complète atteinte",
