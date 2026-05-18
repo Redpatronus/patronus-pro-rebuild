@@ -43,15 +43,6 @@ const Footer = () => {
               >
                 <Github className="h-5 w-5" />
               </a>
-              <a
-                href="https://x.com/redpatronus"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-background/60 hover:text-background transition-colors"
-                aria-label="X (Twitter)"
-              >
-                <XIcon className="h-5 w-5" />
-              </a>
             </div>
           </div>
 
