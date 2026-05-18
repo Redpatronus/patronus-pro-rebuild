@@ -53,13 +53,6 @@ const About = () => {
                 <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                   {t("about.mission.p2")}
                 </p>
-                <div className="flex items-center gap-4">
-                  <Globe className="h-12 w-12 text-primary" />
-                  <div>
-                    <div className="font-display text-2xl font-bold text-foreground">{t("about.globalReach")}</div>
-                    <div className="font-body text-muted-foreground">{t("about.globalReachDesc")}</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
