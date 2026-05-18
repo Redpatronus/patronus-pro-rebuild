@@ -36,9 +36,8 @@ const CaseStudies = () => {
 
         <section className="py-12 bg-primary">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               {[
-                { value: "300+", key: "clients" },
                 { value: "2,500+", key: "assessments" },
                 { value: "50,000+", key: "vulnerabilities" },
                 { value: "99%", key: "retention" },
