@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Shield, CheckCircle, Award, Quote } from "lucide-react";
+import { ArrowRight, Building2, Shield, CheckCircle, Quote } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const CaseStudies = () => {
@@ -10,7 +10,6 @@ const CaseStudies = () => {
 
   const studyKeys = ["financial", "healthcare", "technology"];
   const testimonialKeys = ["t1", "t2"];
-  const certKeys = ["iso", "soc", "crest", "pci"];
 
   return (
     <>
