@@ -139,6 +139,7 @@ const translations: Record<Language, Record<string, any>> = {
       certificationsTitle: "Industry-Recognized Excellence",
       certs: {
         iso: "Information Security",
+        dora: "EU Digital Operational Resilience Act",
         soc2: "Security & Availability",
         crest: "Certified Provider",
         oscp: "Team Certified",
@@ -613,6 +614,7 @@ const translations: Record<Language, Record<string, any>> = {
       certificationsTitle: "Excelentnosť uznaná v odvetví",
       certs: {
         iso: "Informačná bezpečnosť",
+        dora: "Nariadenie EÚ o digitálnej prevádzkovej odolnosti",
         soc2: "Bezpečnosť a dostupnosť",
         crest: "Certifikovaný poskytovateľ",
         oscp: "Certifikovaný tím",
@@ -1083,6 +1085,7 @@ const translations: Record<Language, Record<string, any>> = {
       certificationsTitle: "Branchenanerkannte Exzellenz",
       certs: {
         iso: "Informationssicherheit",
+        dora: "EU-Verordnung über digitale operationale Resilienz",
         soc2: "Sicherheit & Verfügbarkeit",
         crest: "Zertifizierter Anbieter",
         oscp: "Team-zertifiziert",
@@ -1554,6 +1557,7 @@ const translations: Record<Language, Record<string, any>> = {
       certificationsTitle: "Excellence reconnue dans l'industrie",
       certs: {
         iso: "Sécurité de l'information",
+        dora: "Règlement européen sur la résilience opérationnelle numérique",
         soc2: "Sécurité et disponibilité",
         crest: "Fournisseur certifié",
         oscp: "Équipe certifiée",
