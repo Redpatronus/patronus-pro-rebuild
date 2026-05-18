@@ -7,7 +7,7 @@ import { ArrowRight, Cloud, CheckCircle, Server, Lock, Container, Settings } fro
 const capabilities = [
   {
     icon: Settings,
-    title: "Cloud Configuration Audit & Review",
+    title: "Cloud Configuration Audit",
     description:
       "Comprehensive review of cloud environment configurations against CIS benchmarks and security best practices.",
   },
