@@ -119,7 +119,7 @@ const About = () => {
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   >
-                    <Link to="/contact">
+                    <Link to="/hiring">
                       {t("about.joinTeam")}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
