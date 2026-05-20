@@ -1006,6 +1006,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "Über uns",
       caseStudies: "Fallstudien",
       contact: "Kontakt",
+      hiring: "Wir stellen ein",
       contactUs: "Kontaktieren Sie uns",
     },
     hero: {
