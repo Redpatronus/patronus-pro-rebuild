@@ -59,6 +59,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "About",
       caseStudies: "Case Studies",
       contact: "Contact",
+      hiring: "We're Hiring",
       contactUs: "Contact Us",
     },
     hero: {
