@@ -59,6 +59,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "About",
       caseStudies: "Case Studies",
       contact: "Contact",
+      hiring: "We're Hiring",
       contactUs: "Contact Us",
     },
     hero: {
@@ -533,6 +534,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "O nás",
       caseStudies: "Prípadové štúdie",
       contact: "Kontakt",
+      hiring: "Hľadáme ľudí",
       contactUs: "Kontaktujte nás",
     },
     hero: {
@@ -1004,6 +1006,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "Über uns",
       caseStudies: "Fallstudien",
       contact: "Kontakt",
+      hiring: "Wir stellen ein",
       contactUs: "Kontaktieren Sie uns",
     },
     hero: {
@@ -1476,6 +1479,7 @@ const translations: Record<Language, Record<string, any>> = {
       about: "À propos",
       caseStudies: "Études de cas",
       contact: "Contact",
+      hiring: "Nous recrutons",
       contactUs: "Contactez-nous",
     },
     hero: {
