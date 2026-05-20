@@ -17,6 +17,7 @@ const Header = () => {
     { href: "/about", labelKey: "nav.about" },
     { href: "/case-studies", labelKey: "nav.caseStudies" },
     { href: "/contact", labelKey: "nav.contact" },
+    { href: "/hiring", labelKey: "nav.hiring", badge: true },
   ];
 
   const isActive = (href: string) => location.pathname === href;
