@@ -38,11 +38,19 @@ const Header = () => {
                 key={link.href}
                 to={link.href}
                 className={`font-body text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.href)
+                  link.badge
+                    ? "inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-primary hover:bg-primary/15"
+                    : isActive(link.href)
                     ? "text-primary"
                     : "text-muted-foreground"
                 }`}
               >
+                {link.badge && (
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                  </span>
+                )}
                 {t(link.labelKey)}
               </Link>
             ))}
