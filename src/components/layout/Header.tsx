@@ -92,11 +92,19 @@ const Header = () => {
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className={`font-body text-base font-medium py-2 transition-colors ${
-                  isActive(link.href)
+                  link.badge
+                    ? "inline-flex w-fit items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-primary"
+                    : isActive(link.href)
                     ? "text-primary"
                     : "text-muted-foreground"
                 }`}
               >
+                {link.badge && (
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                  </span>
+                )}
                 {t(link.labelKey)}
               </Link>
             ))}
