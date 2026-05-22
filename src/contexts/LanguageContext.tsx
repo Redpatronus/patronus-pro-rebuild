@@ -22,10 +22,23 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
+const SUPPORTED_LANGUAGES: Language[] = ["en", "sk", "de", "fr"];
+
+const detectBrowserLanguage = (): Language => {
+  if (typeof navigator === "undefined") return "en";
+  const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
+  for (const l of langs) {
+    const code = l.toLowerCase().split("-")[0] as Language;
+    if (SUPPORTED_LANGUAGES.includes(code)) return code;
+  }
+  return "en";
+};
+
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem("language");
-    return (saved as Language) || "en";
+    if (saved && SUPPORTED_LANGUAGES.includes(saved as Language)) return saved as Language;
+    return detectBrowserLanguage();
   });
 
   const setLanguage = (lang: Language) => {
