@@ -1,4 +1,5 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
+import { createClient } from "npm:@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -67,15 +68,48 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
+    const submissionId = crypto.randomUUID();
+    const submittedAt = new Date().toISOString();
+
     console.log("Contact form submission received:", {
+      id: submissionId,
       name: data.name,
       company: data.company,
       email: data.email,
       phone: data.phone || "Not provided",
       messageLength: data.message.length,
       recaptchaScore: captcha.score,
-      timestamp: new Date().toISOString(),
+      timestamp: submittedAt,
     });
+
+    // Send admin notification email via the transactional email pipeline.
+    const supabaseUrl = Deno.env.get("SUPABASE_URL");
+    const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+    if (supabaseUrl && serviceKey) {
+      const supabase = createClient(supabaseUrl, serviceKey);
+      const { error: invokeError } = await supabase.functions.invoke(
+        "send-transactional-email",
+        {
+          body: {
+            templateName: "contact-form-notification",
+            idempotencyKey: `contact-notify-${submissionId}`,
+            templateData: {
+              name: data.name,
+              company: data.company,
+              email: data.email,
+              phone: data.phone || "",
+              message: data.message,
+              submittedAt,
+            },
+          },
+        }
+      );
+      if (invokeError) {
+        console.error("Failed to enqueue notification email:", invokeError);
+      }
+    } else {
+      console.error("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY; cannot send notification");
+    }
 
     return new Response(
       JSON.stringify({ success: true, message: "Contact form submitted successfully" }),
