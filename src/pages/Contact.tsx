@@ -270,6 +270,12 @@ const Contact = () => {
                       <p className="font-body text-sm text-muted-foreground text-center">
                         {t("contact.privacyNote")}
                       </p>
+                      <p className="font-body text-xs text-muted-foreground text-center">
+                        Protected by reCAPTCHA. Google{" "}
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Privacy</a>
+                        {" & "}
+                        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Terms</a>.
+                      </p>
                     </form>
                   </>
                 )}
