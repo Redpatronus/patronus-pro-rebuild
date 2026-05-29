@@ -9,6 +9,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { z } from "zod";
+import { useEffect } from "react";
+import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -60,6 +62,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      const recaptchaToken = await getRecaptchaToken("contact_form");
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`,
         {
@@ -68,7 +71,7 @@ const Contact = () => {
             "Content-Type": "application/json",
             Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
           },
-          body: JSON.stringify(result.data),
+          body: JSON.stringify({ ...result.data, recaptchaToken }),
         }
       );
 
