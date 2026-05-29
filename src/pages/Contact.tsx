@@ -9,6 +9,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { z } from "zod";
+import { useEffect } from "react";
+import { getRecaptchaToken, loadRecaptcha } from "@/lib/recaptcha";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -33,6 +35,10 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
+
+  useEffect(() => {
+    loadRecaptcha().catch(() => {});
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -60,6 +66,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
+      const recaptchaToken = await getRecaptchaToken("contact_form");
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/contact-form`,
         {
@@ -68,7 +75,7 @@ const Contact = () => {
             "Content-Type": "application/json",
             Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
           },
-          body: JSON.stringify(result.data),
+          body: JSON.stringify({ ...result.data, recaptchaToken }),
         }
       );
 
@@ -262,6 +269,12 @@ const Contact = () => {
 
                       <p className="font-body text-sm text-muted-foreground text-center">
                         {t("contact.privacyNote")}
+                      </p>
+                      <p className="font-body text-xs text-muted-foreground text-center">
+                        Protected by reCAPTCHA. Google{" "}
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Privacy</a>
+                        {" & "}
+                        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">Terms</a>.
                       </p>
                     </form>
                   </>
