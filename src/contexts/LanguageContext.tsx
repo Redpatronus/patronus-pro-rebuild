@@ -554,7 +554,7 @@ const translations: Record<Language, Record<string, any>> = {
       highlight1: "DORA Kompatibilné",
       highlight2: "Certifikovaní experti",
       highlight3: "24/7 Podpora",
-      title: "Podnikové riešenia kybernetickej bezpečnosti",
+      title: "Špičková kybernetická bezpečnosť pre podniky.\nDôveryhodné.\nZabezpečené.\nV súlade s predpismi.\n\n",
       subtitle:
         "Chránime vaše digitálne aktíva pomocou najmodernejších bezpečnostných služieb, penetračného testovania a riešení v súlade s DORA. Váš dôveryhodný partner v oblasti kybernetickej bezpečnosti.",
       cta: "Začať",
@@ -1026,7 +1026,7 @@ const translations: Record<Language, Record<string, any>> = {
       highlight1: "DORA Konform",
       highlight2: "Zertifizierte Experten",
       highlight3: "24/7 Support",
-      title: "Enterprise Cybersicherheitslösungen",
+      title: "Cybersicherheit auf Enterprise-Niveau.\nVertrauenswürdig.\nSicher.\nKonform.\n\n",
       subtitle:
         "Schutz Ihrer digitalen Vermögenswerte mit modernsten Sicherheitsdiensten, Penetrationstests und DORA-konformen Lösungen. Ihr vertrauenswürdiger Partner für Cybersicherheit.",
       cta: "Loslegen",
@@ -1499,7 +1499,7 @@ const translations: Record<Language, Record<string, any>> = {
       highlight1: "Conforme DORA",
       highlight2: "Experts certifiés",
       highlight3: "Support 24/7",
-      title: "Solutions de cybersécurité pour entreprises",
+      title: "L'excellence en cybersécurité pour l'entreprise.\nFiable.\nSécurisé.\nConforme.\n\n",
       subtitle:
         "Protégez vos actifs numériques avec des services de sécurité de pointe, des tests d'intrusion et des solutions conformes à DORA. Votre partenaire de confiance en cybersécurité.",
       cta: "Commencer",
