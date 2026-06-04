@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Shield, ArrowRight, CheckCircle, Cloud } from "lucide-react";
 import { AWSLogo, AzureLogo, GCPLogo } from "@/components/icons/CloudLogos";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LeetText from "./LeetText";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -36,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 whitespace-pre-line">
-              {t("hero.title")}
+              <LeetText text={t("hero.title")} />
             </h1>
 
             <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
