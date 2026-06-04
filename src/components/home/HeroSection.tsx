@@ -26,9 +26,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="gradient-hero py-16 lg:py-24">
+    <section className="gradient-hero py-10 lg:py-14">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Content */}
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent rounded-full mb-6">
@@ -36,15 +36,15 @@ const HeroSection = () => {
               <span className="font-body text-sm font-medium text-accent-foreground">Enterprise Security Partner</span>
             </div>
 
-            <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 whitespace-pre-line">
+            <h1 className="font-display text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight mb-5 whitespace-pre-line">
               <LeetText text={t("hero.title")} />
             </h1>
 
-            <p className="font-body text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
+            <p className="font-body text-base lg:text-lg text-muted-foreground mb-6 leading-relaxed max-w-xl">
               {t("hero.subtitle")}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button size="lg" asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <Link to="/contact">
                   {t("hero.cta")}
@@ -94,7 +94,7 @@ const HeroSection = () => {
 
           {/* Visual */}
           <div className="relative animate-fade-in animation-delay-200">
-            <div className="relative bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 lg:p-12">
+            <div className="relative bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-6 lg:p-8">
               <div className="grid grid-cols-2 gap-4">
                 {stats.map((stat, index) => (
                   <div key={index} className="bg-card rounded-xl p-6 shadow-card text-center">
