@@ -53,14 +53,17 @@ const LeetText = ({
     const intervals: number[] = [];
 
     const TOTAL_MS = 3000;
-    const SCRAMBLE_MS = 800;
+    const SCRAMBLE_MS = 700;
     const REVEAL_MS = TOTAL_MS - SCRAMBLE_MS;
+    const REVEAL_STEP = 140; // ms between reveal ticks (keeps scramble feel slow)
 
     const chars = text.split("");
     const locked = new Array(chars.length).fill(false);
-    const revealableCount = chars.filter((c) => c !== " " && c !== "\n").length || 1;
-    const revealStep = Math.max(20, Math.floor((REVEAL_MS - 80) / revealableCount));
-    const scrambleDuration = SCRAMBLE_MS;
+    const revealable = chars
+      .map((c, i) => (c !== " " && c !== "\n" ? i : -1))
+      .filter((i) => i >= 0);
+    const ticks = Math.max(1, Math.floor((REVEAL_MS - 80) / REVEAL_STEP));
+    const perTick = Math.max(1, Math.ceil(revealable.length / ticks));
 
     // Kick off immediately on mount so it runs during page load
     setDisplay(
@@ -83,15 +86,20 @@ const LeetText = ({
 
     const startReveal = window.setTimeout(() => {
       window.clearInterval(scrambleId);
-      const order = chars
-        .map((_, i) => i)
-        .filter((i) => chars[i] !== " " && chars[i] !== "\n")
-        .sort(() => Math.random() - 0.5);
+      const order = [...revealable].sort(() => Math.random() - 0.5);
 
-      order.forEach((idx, n) => {
+      // Group reveals: perTick chars per step
+      const groups: number[][] = [];
+      for (let i = 0; i < order.length; i += perTick) {
+        groups.push(order.slice(i, i + perTick));
+      }
+
+      groups.forEach((group, n) => {
         const t = window.setTimeout(() => {
           if (cancelled) return;
-          locked[idx] = true;
+          group.forEach((idx) => {
+            locked[idx] = true;
+          });
           setDisplay(
             chars
               .map((c, i) => {
@@ -101,16 +109,16 @@ const LeetText = ({
               })
               .join("")
           );
-        }, n * revealStep);
+        }, n * REVEAL_STEP);
         timeouts.push(t);
       });
 
       const finalize = window.setTimeout(() => {
         if (cancelled) return;
         setDisplay(text);
-      }, order.length * revealStep + 80);
+      }, groups.length * REVEAL_STEP + 80);
       timeouts.push(finalize);
-    }, scrambleDuration);
+    }, SCRAMBLE_MS);
     timeouts.push(startReveal);
 
     return () => {
