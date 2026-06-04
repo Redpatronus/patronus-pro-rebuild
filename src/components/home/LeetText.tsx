@@ -42,9 +42,7 @@ interface LeetTextProps {
 const LeetText = ({
   text,
   className,
-  interval = 110,
-  revealStep = 90,
-  scrambleDuration = 600,
+  interval = 80,
   pause = 4500,
 }: LeetTextProps) => {
   const [display, setDisplay] = useState(text);
