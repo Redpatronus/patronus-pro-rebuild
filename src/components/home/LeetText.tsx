@@ -118,7 +118,7 @@ const LeetText = ({
       timeouts.forEach((t) => window.clearTimeout(t));
       intervals.forEach((i) => window.clearInterval(i));
     };
-  }, [text, interval, revealStep, scrambleDuration, pause]);
+  }, [text, interval, pause]);
 
 
   return (
