@@ -79,7 +79,7 @@ const translations: Record<Language, Record<string, any>> = {
       highlight1: "DORA Compliant",
       highlight2: "Certified Experts",
       highlight3: "24/7 Support",
-      title: "Cybersecurity excellence for the enterprise. \nTrusted. \nSecured. \nCompliant.\n\n",
+      title: "Cybersecurity excellence for the enterprise.\nTrusted.\nSecured.\nCompliant.\n\n",
       subtitle:
         "Protecting your digital assets with cutting-edge security services, penetration testing, and DORA-compliant solutions. Your trusted partner in cybersecurity excellence.",
       cta: "Get Started",
