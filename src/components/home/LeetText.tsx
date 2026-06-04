@@ -106,7 +106,14 @@ const LeetText = ({
       timeouts.push(startReveal);
     };
 
-    const initial = window.setTimeout(cycle, 600);
+    // Kick off immediately on mount so it runs during page load
+    setDisplay(
+      text
+        .split("")
+        .map((c) => (c === " " || c === "\n" ? c : pickLeet(c)))
+        .join("")
+    );
+    const initial = window.setTimeout(cycle, 50);
     timeouts.push(initial);
 
     return () => {
