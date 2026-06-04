@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/layout/Layout";
 import HeroSection from "@/components/home/HeroSection";
@@ -6,7 +5,6 @@ import ServicesOverview from "@/components/home/ServicesOverview";
 import AISecuritySection from "@/components/home/AISecuritySection";
 import TrustIndicators from "@/components/home/TrustIndicators";
 import CTASection from "@/components/home/CTASection";
-
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -32,48 +30,7 @@ const organizationSchema = {
 };
 
 const Index = () => {
-  useEffect(() => {
-    let cancelled = false;
-    const totalDuration = 3000; // total roll time
-    const downDuration = 1800;
-    const startTime = performance.now();
-    const startY = window.scrollY;
-    const maxY = () =>
-      Math.max(
-        document.body.scrollHeight,
-        document.documentElement.scrollHeight
-      ) - window.innerHeight;
-
-    const easeInOut = (t: number) =>
-      t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-
-    let rafId = 0;
-    const tick = (now: number) => {
-      if (cancelled) return;
-      const elapsed = now - startTime;
-      if (elapsed < downDuration) {
-        const p = easeInOut(elapsed / downDuration);
-        window.scrollTo(0, startY + (maxY() - startY) * p);
-        rafId = requestAnimationFrame(tick);
-      } else if (elapsed < totalDuration) {
-        const p = easeInOut((elapsed - downDuration) / (totalDuration - downDuration));
-        const peak = maxY();
-        window.scrollTo(0, peak - peak * p);
-        rafId = requestAnimationFrame(tick);
-      } else {
-        window.scrollTo(0, 0);
-      }
-    };
-    rafId = requestAnimationFrame(tick);
-
-    return () => {
-      cancelled = true;
-      cancelAnimationFrame(rafId);
-    };
-  }, []);
-
   return (
-
     <>
       <Helmet>
         <title>Red Patronus | DORA-Compliant Enterprise Cybersecurity Solutions</title>
