@@ -52,8 +52,15 @@ const LeetText = ({
     const timeouts: number[] = [];
     const intervals: number[] = [];
 
+    const TOTAL_MS = 3000;
+    const SCRAMBLE_MS = 800;
+    const REVEAL_MS = TOTAL_MS - SCRAMBLE_MS;
+
     const chars = text.split("");
     const locked = new Array(chars.length).fill(false);
+    const revealableCount = chars.filter((c) => c !== " " && c !== "\n").length || 1;
+    const revealStep = Math.max(20, Math.floor((REVEAL_MS - 80) / revealableCount));
+    const scrambleDuration = SCRAMBLE_MS;
 
     // Kick off immediately on mount so it runs during page load
     setDisplay(
