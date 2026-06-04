@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/layout/Layout";
 import HeroSection from "@/components/home/HeroSection";
@@ -5,6 +6,7 @@ import ServicesOverview from "@/components/home/ServicesOverview";
 import AISecuritySection from "@/components/home/AISecuritySection";
 import TrustIndicators from "@/components/home/TrustIndicators";
 import CTASection from "@/components/home/CTASection";
+
 
 const organizationSchema = {
   "@context": "https://schema.org",
