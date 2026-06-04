@@ -35,7 +35,7 @@ const HeroSection = () => {
               <span className="font-body text-sm font-medium text-accent-foreground">Enterprise Security Partner</span>
             </div>
 
-            <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
+            <h1 className="font-display text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground leading-tight mb-6 whitespace-pre-line">
               {t("hero.title")}
             </h1>
 
