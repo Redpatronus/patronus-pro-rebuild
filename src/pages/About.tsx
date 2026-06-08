@@ -55,7 +55,7 @@ const About = () => {
                 <div className="h-1 w-12 bg-primary mt-6" />
               </div>
               <div className="lg:w-2/3 space-y-8">
-                <p className="font-body text-xl text-foreground leading-relaxed font-light">
+                <p className="font-body text-lg text-muted-foreground leading-relaxed">
                   {t("about.mission.p1")}
                 </p>
                 <p className="font-body text-lg text-muted-foreground leading-relaxed">
