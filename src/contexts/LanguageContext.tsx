@@ -316,7 +316,7 @@ const translations: Record<Language, Record<string, any>> = {
       joinTeam: "Join Our Team",
       teamCertifications: "Team Certifications",
       ctaTitle: "Ready to Work Together?",
-      ctaSubtitle: "Let's discuss how Red Patronus can help strengthen your organization's security posture.",
+      ctaSubtitle: "Start a discussion with us on how we can help strengthen your organization's security posture.",
       ctaButton: "Contact Us Today",
     },
     // Case Studies page
