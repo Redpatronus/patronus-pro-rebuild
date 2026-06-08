@@ -145,8 +145,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">{t("contact.emailLabel")}</h3>
-                      <a href="mailto:info@redpatron.us" className="font-body text-muted-foreground hover:text-primary transition-colors">
-                        info@redpatron.us
+                      <a href="mailto:info@redpatronus.com" className="font-body text-muted-foreground hover:text-primary transition-colors">
+                        info@redpatronus.com
                       </a>
                     </div>
                   </div>

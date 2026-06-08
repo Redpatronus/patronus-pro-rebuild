@@ -97,7 +97,7 @@ const Hiring = () => {
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg">
-                    <a href="mailto:info@redpatron.us?subject=Junior%20Security%20%2F%20Infrastructure%20Engineer">
+                    <a href="mailto:info@redpatronus.com?subject=Junior%20Security%20%2F%20Infrastructure%20Engineer">
                       {applyCta}
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </a>

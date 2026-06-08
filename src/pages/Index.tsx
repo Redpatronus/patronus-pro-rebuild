@@ -25,7 +25,7 @@ const organizationSchema = {
     "@type": "ContactPoint",
     "telephone": "+421-948-446-778",
     "contactType": "sales",
-    "email": "info@redpatron.us"
+    "email": "info@redpatronus.com"
   },
   "sameAs": []
 };
