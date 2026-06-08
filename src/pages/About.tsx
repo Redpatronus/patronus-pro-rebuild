@@ -116,12 +116,12 @@ const About = () => {
               </div>
               <div className="lg:w-1/2 bg-zinc-800 relative min-h-[320px] lg:min-h-[420px]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.25),transparent_70%)]" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-3/4 h-3/4 border border-white/10 rounded-full flex items-center justify-center animate-pulse">
-                    <div className="w-3/4 h-3/4 border border-white/5 rounded-full flex items-center justify-center">
-                      <div className="w-1/2 h-1/2 border border-white/10 rounded-full bg-primary/20" />
-                    </div>
-                  </div>
+                <div className="absolute inset-0 flex items-center justify-center p-10">
+                  <img
+                    src="/rp-logo.svg"
+                    alt="Red Patronus logo"
+                    className="max-w-[60%] max-h-[60%] object-contain"
+                  />
                 </div>
               </div>
             </div>
