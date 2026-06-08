@@ -98,7 +98,7 @@ const Services = () => {
                         </h3>
                         <div className="grid sm:grid-cols-2 gap-4">
                           {features.map((feature, i) => (
-                            <div key={i} className="flex items-start gap-3 p-3 bg-background rounded-lg border border-border/50 hover:border-primary/30 hover:shadow-sm transition-all duration-200">
+                            <div key={i} className="flex items-start gap-3 p-3 bg-background rounded-lg border border-border/50">
                               <div className="p-1 bg-primary/10 rounded-md mt-0.5">
                                 <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
                               </div>
