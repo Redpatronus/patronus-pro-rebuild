@@ -114,7 +114,7 @@ const About = () => {
                   {t("about.teamDesc")}
                 </p>
               </div>
-              <div className="lg:w-1/2 bg-white relative min-h-[320px] lg:min-h-[420px]">
+              <div className="lg:w-1/2 bg-zinc-200 relative min-h-[320px] lg:min-h-[420px]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.08),transparent_70%)]" />
                 <div className="absolute inset-0 flex items-center justify-center p-10">
                   <img
