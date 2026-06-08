@@ -215,7 +215,7 @@ const translations: Record<Language, Record<string, any>> = {
       phoneLabel: "Phone",
       locationLabel: "Location",
       responseTimeLabel: "Response Time",
-      responseTimeValue: "We typically respond within 24 business hours",
+      responseTimeValue: "We respond within 24 hours",
       whyChoose: "Why Choose Red Patronus",
       whyItems: [
         "15+ years of enterprise security experience",
@@ -225,7 +225,7 @@ const translations: Record<Language, Record<string, any>> = {
       requestConsultation: "Request a Consultation",
       messageReceived: "Message Received",
       messageReceivedDesc:
-        "Thank you for reaching out. One of our security consultants will contact you within 24 business hours.",
+        "Thank you for reaching out. One of our security consultants will contact you within 24 hours.",
       sendAnother: "Send Another Message",
       privacyNote: "By submitting this form, you agree to our privacy policy. We'll never share your information.",
       form: {
