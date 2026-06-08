@@ -418,7 +418,7 @@ const translations: Record<Language, Record<string, any>> = {
       customTitle: "Need a Custom Solution?",
       customSubtitle:
         "Our team can tailor our services to meet your organization's specific security requirements and compliance needs.",
-      customButton: "Contact Our Team",
+      customButton: "Contact Us",
       items: {
         offensive: {
           title: "Offensive Security Services",
