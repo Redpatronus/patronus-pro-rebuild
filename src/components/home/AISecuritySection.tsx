@@ -72,15 +72,6 @@ const AISecuritySection = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center">
-          <Button size="lg" asChild>
-            <Link to="/contact">
-              {t("ai.cta")}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
       </div>
     </section>
   );
