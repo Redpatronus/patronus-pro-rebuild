@@ -77,7 +77,7 @@ const Phishing = () => {
                   <h3 className="font-display text-lg font-semibold text-foreground mb-2">
                     {feature.title}
                   </h3>
-                  <p className="font-body text-sm text-muted-foreground">
+                  <p className="font-body text-base text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
