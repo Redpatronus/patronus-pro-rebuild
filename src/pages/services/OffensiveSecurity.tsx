@@ -85,7 +85,7 @@ const OffensiveSecurity = () => {
                     <CheckCircle className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
-                  <p className="font-body text-sm text-muted-foreground">{feature.description}</p>
+                  <p className="font-body text-base text-muted-foreground leading-relaxed">{feature.description}</p>
                 </div>
               ))}
             </div>

@@ -126,7 +126,7 @@ const PenetrationTesting = () => {
                       </div>
                       <div>
                         <h3 className="font-body font-semibold text-foreground">{item.phase}</h3>
-                        <p className="font-body text-sm text-muted-foreground">{item.description}</p>
+                        <p className="font-body text-base text-muted-foreground leading-relaxed">{item.description}</p>
                       </div>
                     </div>
                   ))}
