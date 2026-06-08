@@ -186,7 +186,7 @@ const translations: Record<Language, Record<string, any>> = {
     cta: {
       title: "Ready to Secure Your Business?",
       subtitle:
-        "Get in touch with our security experts today and discover how we can protect your organization from cyber threats.",
+        "Start a discussion with us on how we can help strengthen your organization's security posture.",
       button: "Schedule a Consultation",
     },
     footer: {
