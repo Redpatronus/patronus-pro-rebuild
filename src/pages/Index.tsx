@@ -5,6 +5,7 @@ import ServicesOverview from "@/components/home/ServicesOverview";
 import AISecuritySection from "@/components/home/AISecuritySection";
 import TrustIndicators from "@/components/home/TrustIndicators";
 import CTASection from "@/components/home/CTASection";
+import ValuesSection from "@/components/home/ValuesSection";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -50,6 +51,7 @@ const Index = () => {
         <ServicesOverview />
         <AISecuritySection />
         <TrustIndicators />
+        <ValuesSection />
         <CTASection />
       </Layout>
     </>
