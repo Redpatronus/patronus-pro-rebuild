@@ -27,22 +27,20 @@ const About = () => {
       </Helmet>
       <Layout>
         {/* Hero */}
-        <section className="relative py-24 lg:py-32 border-b border-border overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,hsl(var(--primary)/0.08),transparent_55%)]" />
-          <div className="container mx-auto px-4 lg:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <span className="font-body text-xs font-bold tracking-[0.2em] text-primary uppercase mb-6 block">
-                {t("about.title")}
-              </span>
-              <h1 className="font-display text-4xl lg:text-6xl font-bold tracking-tight text-foreground mb-8 text-balance">
-                {t("about.heroTitle")}
-              </h1>
-              <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                {t("about.heroSubtitle")}
-              </p>
-            </div>
+        <section className="gradient-hero py-16 lg:py-24">
+          <div className="container mx-auto px-4 lg:px-8 text-center">
+            <span className="font-body text-sm font-semibold text-primary uppercase tracking-wider">
+              {t("about.title")}
+            </span>
+            <h1 className="font-display text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6 text-balance">
+              {t("about.heroTitle")}
+            </h1>
+            <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
+              {t("about.heroSubtitle")}
+            </p>
           </div>
         </section>
+
 
         {/* Our Mission — framed card matching /services */}
         <section className="py-20 lg:py-28 bg-background">
