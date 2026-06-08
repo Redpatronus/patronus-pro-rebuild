@@ -65,7 +65,7 @@ const OffensiveSecurity = () => {
               </h1>
               <p className="font-body text-lg lg:text-xl text-muted-foreground max-w-3xl leading-relaxed">
                 Our Offensive Security Services are designed to rigorously assess your organization's security posture
-                by simulating real-world cyber attacks. Our expert red team works to identify vulnerabilities, test your
+                by simulating real-world cyber attacks. Our expert Red Team works to identify vulnerabilities, test your
                 defenses, and provide actionable insights.
               </p>
             </div>
