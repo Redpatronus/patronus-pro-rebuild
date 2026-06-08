@@ -113,18 +113,6 @@ const About = () => {
                 <p className="font-body text-zinc-400 text-lg leading-relaxed mb-10">
                   {t("about.teamDesc")}
                 </p>
-                <div>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                  >
-                    <Link to="/hiring">
-                      {t("about.joinTeam")}
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
               </div>
               <div className="lg:w-1/2 bg-zinc-800 relative min-h-[320px] lg:min-h-[420px]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.25),transparent_70%)]" />
