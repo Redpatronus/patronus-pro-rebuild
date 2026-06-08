@@ -404,7 +404,7 @@ const translations: Record<Language, Record<string, any>> = {
         pci: { name: "PCI-DSS", desc: "QSA Partner" },
       },
       ctaTitle: "Ready to Be Our Next Success Story?",
-      ctaSubtitle: "Contact us to discuss how we can help strengthen your organization's security posture.",
+      ctaSubtitle: "Start a discussion with us on how we can help strengthen your organization's security posture.",
       ctaButton: "Start Your Assessment",
     },
     // Services page (full)
