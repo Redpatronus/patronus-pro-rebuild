@@ -102,31 +102,34 @@ const About = () => {
           </div>
         </section>
 
-        {/* Team — dark architectural panel */}
+        {/* Team — framed card matching /services */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="bg-zinc-900 text-white rounded-3xl overflow-hidden flex flex-col lg:flex-row max-w-6xl mx-auto">
-              <div className="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
-                <h2 className="font-display text-3xl lg:text-4xl font-bold mb-6">
-                  {t("about.teamTitle")}
-                </h2>
-                <p className="font-body text-zinc-400 text-lg leading-relaxed mb-10">
-                  {t("about.teamDesc")}
-                </p>
-              </div>
-              <div className="lg:w-1/2 bg-zinc-200 relative min-h-[320px] lg:min-h-[420px]">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.08),transparent_70%)]" />
-                <div className="absolute inset-0 flex items-center justify-center p-10">
-                  <img
-                    src="/rp-logo.svg"
-                    alt="Red Patronus logo"
-                    className="max-w-[60%] max-h-[60%] object-contain"
-                  />
+            <div className="max-w-6xl mx-auto bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border">
+              <div className="bg-zinc-900 text-white rounded-2xl overflow-hidden flex flex-col lg:flex-row">
+                <div className="lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
+                  <h2 className="font-display text-3xl lg:text-4xl font-bold mb-6">
+                    {t("about.teamTitle")}
+                  </h2>
+                  <p className="font-body text-zinc-400 text-lg leading-relaxed mb-10">
+                    {t("about.teamDesc")}
+                  </p>
+                </div>
+                <div className="lg:w-1/2 bg-zinc-200 relative min-h-[320px] lg:min-h-[420px]">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,hsl(var(--primary)/0.08),transparent_70%)]" />
+                  <div className="absolute inset-0 flex items-center justify-center p-10">
+                    <img
+                      src="/rp-logo.svg"
+                      alt="Red Patronus logo"
+                      className="max-w-[60%] max-h-[60%] object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* CTA */}
         <section className="py-20 bg-primary relative overflow-hidden">
