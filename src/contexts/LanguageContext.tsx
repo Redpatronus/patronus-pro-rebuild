@@ -81,7 +81,7 @@ const translations: Record<Language, Record<string, any>> = {
       highlight3: "24/7 Support",
       title: "Cybersecurity excellence for the enterprise.\nTrusted.\nSecured.\nCompliant.",
       subtitle:
-        "Protecting your digital assets with cutting-edge security services, penetration testing, and DORA-compliant solutions. Your trusted partner in cybersecurity excellence.",
+        "Protecting your digital assets with cutting-edge security services, penetration testing, and DORA-compliant solutions. We are your trusted partner in cybersecurity excellence.",
       cta: "Get Started",
       secondaryCta: "Our Services",
     },
