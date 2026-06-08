@@ -186,7 +186,7 @@ const translations: Record<Language, Record<string, any>> = {
     cta: {
       title: "Ready to Secure Your Business?",
       subtitle:
-        "Get in touch with our security experts today and discover how we can protect your organization from cyber threats.",
+        "Start a discussion with us on how we can help strengthen your organization's security posture.",
       button: "Schedule a Consultation",
     },
     footer: {
@@ -316,7 +316,7 @@ const translations: Record<Language, Record<string, any>> = {
       joinTeam: "Join Our Team",
       teamCertifications: "Team Certifications",
       ctaTitle: "Ready to Work Together?",
-      ctaSubtitle: "Let's discuss how Red Patronus can help strengthen your organization's security posture.",
+      ctaSubtitle: "Start a discussion with us on how we can help strengthen your organization's security posture.",
       ctaButton: "Contact Us Today",
     },
     // Case Studies page
@@ -404,7 +404,7 @@ const translations: Record<Language, Record<string, any>> = {
         pci: { name: "PCI-DSS", desc: "QSA Partner" },
       },
       ctaTitle: "Ready to Be Our Next Success Story?",
-      ctaSubtitle: "Contact us to discuss how we can help strengthen your organization's security posture.",
+      ctaSubtitle: "Start a discussion with us on how we can help strengthen your organization's security posture.",
       ctaButton: "Start Your Assessment",
     },
     // Services page (full)
