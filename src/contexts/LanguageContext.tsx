@@ -405,7 +405,7 @@ const translations: Record<Language, Record<string, any>> = {
       },
       ctaTitle: "Ready to Be Our Next Success Story?",
       ctaSubtitle: "Start a discussion with us on how we can help strengthen your organization's security posture.",
-      ctaButton: "Start Your Assessment",
+      ctaButton: "Begin Your Assessment",
     },
     // Services page (full)
     servicesPage: {
