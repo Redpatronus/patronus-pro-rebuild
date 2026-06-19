@@ -28,7 +28,6 @@ const TrustIndicators = () => {
     { icon: Shield, value: "15+", labelKey: "trust.statsItems.years" },
     { icon: Building2, value: "20+", labelKey: "trust.statsItems.clients" },
     { icon: Users, value: "10", labelKey: "trust.statsItems.experts" },
-    { icon: Award, value: "99%", labelKey: "trust.statsItems.satisfaction" },
   ];
 
   return (
