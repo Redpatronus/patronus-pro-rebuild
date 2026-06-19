@@ -108,20 +108,20 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((value) => (
                 <div
-                  key={value.key}
+                  key={value.title}
                   className="group bg-card p-8 border border-border rounded-md shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300"
                 >
                   <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mb-6 text-primary transition-transform group-hover:scale-110">
                     <value.icon className="h-6 w-6" />
                   </div>
                   <h3 className="font-display text-2xl font-semibold text-foreground mb-3">
-                    {t(`about.values.${value.key}.title`)}
+                    {value.title}
                   </h3>
                   <p className="font-body text-base text-muted-foreground leading-relaxed">
-                    {t(`about.values.${value.key}.description`)}
+                    {value.description}
                   </p>
                 </div>
               ))}
