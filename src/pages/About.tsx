@@ -2,17 +2,43 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Target, Users, Lock } from "lucide-react";
+import { ArrowRight, Users, Eye, Network, ShieldCheck, Wind } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
   const { t } = useLanguage();
 
   const values = [
-    { icon: Shield, key: "integrity" },
-    { icon: Target, key: "excellence" },
-    { icon: Users, key: "collaboration" },
-    { icon: Lock, key: "confidentiality" },
+    {
+      icon: Users,
+      title: "One Flight, One Team",
+      description:
+        "We fly as one team, not a hierarchy of rank. A title tells you what someone is responsible for — it doesn't make them worth more than anyone else.",
+    },
+    {
+      icon: Eye,
+      title: "Eagle Vision, Equal Ground",
+      description:
+        "We aim high and keep our feet on the ground. Same respect, same rules, and the same access to what people need to do great work — for everyone. Leadership earns its place through vision and accountability, not perks or special comfort.",
+    },
+    {
+      icon: Network,
+      title: "No One Flies Off With the Nest",
+      description:
+        "What we build here in Redpatronus is a shared company asset: our knowledge, client relationships, methods, and experience. We protect these assets, share knowledge openly, and respect the work of others.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Guard the Nest",
+      description:
+        "A nest is kept safe by a thousand small habits, not one heroic moment. Every access rule, every deadline, every clean handover, every decision written down — that's how we keep each other safe. We guard the nest by respecting the details.",
+    },
+    {
+      icon: Wind,
+      title: "No Panic, No Drama",
+      description:
+        "Storms happen. We don't panic. When something breaks, we name it, fix it, and move on — no pointing fingers, no big reactions over small things. Staying calm under pressure is a skill, and we practise it on purpose.",
+    },
   ];
 
   return (
