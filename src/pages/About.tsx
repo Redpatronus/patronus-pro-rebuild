@@ -103,6 +103,77 @@ const About = () => {
           </div>
         </section>
 
+        {/* Principles */}
+        <section className="py-20 lg:py-28 bg-background">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-14 lg:mb-16">
+              <span className="font-body text-xs font-bold tracking-[0.2em] text-primary uppercase">
+                Our Principles
+              </span>
+              <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mt-4 mb-6">
+                Principles That Guide Us
+              </h2>
+              <p className="font-body text-muted-foreground italic">
+                The shared commitments that shape how we work, lead, and protect what we build together.
+              </p>
+            </div>
+
+            <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  icon: Users,
+                  title: "One Flight, One Team",
+                  description:
+                    "We fly as one team, not a hierarchy of rank. A title tells you what someone is responsible for — it doesn't make them worth more than anyone else.",
+                },
+                {
+                  icon: Mountain,
+                  title: "Eagle Vision, Equal Ground",
+                  description:
+                    "We aim high and keep our feet on the ground. Same respect, same rules, and the same access to what people need to do great work — for everyone. Leadership earns its place through vision and accountability, not perks or special comfort.",
+                },
+                {
+                  icon: Network,
+                  title: "No One Flies Off With the Nest",
+                  description:
+                    "What we build here in Redpatronus is a shared company asset: our knowledge, client relationships, methods, and experience. We protect these assets, share knowledge openly, and respect the work of others.",
+                },
+                {
+                  icon: Shield,
+                  title: "Guard the Nest",
+                  description:
+                    "A nest is kept safe by a thousand small habits, not one heroic moment. Every access rule, every deadline, every clean handover, every decision written down — that's how we keep each other safe. We guard the nest by respecting the details.",
+                },
+                {
+                  icon: Wind,
+                  title: "No Panic, No Drama",
+                  description:
+                    "Storms happen. We don't panic. When something breaks, we name it, fix it, and move on — no pointing fingers, no big reactions over small things. Staying calm under pressure is a skill, and we practise it on purpose.",
+                },
+              ].map((principle) => (
+                <div
+                  key={principle.title}
+                  className="group bg-card p-8 border border-border rounded-md shadow-sm hover:shadow-md hover:border-primary/30 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-5">
+                    <div className="shrink-0 w-12 h-12 rounded-full bg-accent flex items-center justify-center text-primary transition-transform group-hover:scale-110">
+                      <principle.icon className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                        {principle.title}
+                      </h3>
+                      <p className="font-body text-base text-muted-foreground leading-relaxed">
+                        {principle.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Team — dark architectural panel */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
