@@ -10,8 +10,6 @@ const About = () => {
 
   const values = [
     { icon: Shield, key: "integrity" },
-    { icon: Target, key: "excellence" },
-    { icon: Users, key: "collaboration" },
     { icon: Lock, key: "confidentiality" },
   ];
 
