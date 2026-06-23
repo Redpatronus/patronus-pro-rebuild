@@ -80,7 +80,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {values.map((value) => (
                 <div
                   key={value.key}
