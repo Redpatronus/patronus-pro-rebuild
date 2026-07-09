@@ -1,4 +1,4 @@
-import { Users, Mountain, Network, Shield, Wind } from "lucide-react";
+import { Users, Mountain, Network, Shield, Wind, Leaf } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const values = [
