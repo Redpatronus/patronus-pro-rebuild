@@ -32,6 +32,12 @@ const values = [
     description:
       "Storms happen. We don't panic. When something breaks, we name it, fix it, and move on — no pointing fingers, no big reactions over small things. Staying calm under pressure is a skill, and we practise it on purpose.",
   },
+  {
+    icon: Leaf,
+    title: "Protect the Sky We Share",
+    description:
+      "Security and sustainability go hand in hand. We take ESG seriously — making responsible choices for the environment, our people, and the communities we serve. We favour efficient infrastructure, ethical partnerships, and transparent governance, because protecting our clients also means protecting the world they operate in.",
+  },
 ];
 
 const ValuesSection = () => {
