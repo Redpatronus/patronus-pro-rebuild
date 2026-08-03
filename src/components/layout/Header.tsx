@@ -16,6 +16,7 @@ const Header = () => {
     { href: "/services", labelKey: "nav.services" },
     { href: "/about", labelKey: "nav.about" },
     { href: "/case-studies", labelKey: "nav.caseStudies" },
+    { href: "/tools", labelKey: "nav.tools" },
     { href: "/contact", labelKey: "nav.contact" },
     { href: "/hiring", labelKey: "nav.hiring", badge: true },
   ];
