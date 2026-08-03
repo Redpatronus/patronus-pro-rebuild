@@ -5,9 +5,11 @@ import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
 import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
 import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 import vigLogo from "@/assets/partners/vig-logo.svg";
+import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
+  { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
@@ -83,7 +85,9 @@ const TrustIndicators = () => {
                 rel="noopener noreferrer"
                 className="bg-background/10 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background/20 transition-all duration-300"
               >
-                <img src={partner.logo} alt={partner.name} className="h-12 w-auto object-contain" />
+                <div className="bg-background rounded-md px-4 py-3 flex items-center justify-center w-full">
+                  <img src={partner.logo} alt={partner.name} className="h-12 w-auto object-contain" />
+                </div>
                 <span className="font-body text-sm font-medium text-background">{partner.name}</span>
               </a>
             ))}
