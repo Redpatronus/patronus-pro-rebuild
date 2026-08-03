@@ -10,10 +10,10 @@ import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
-  { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
-  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
+  { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
+  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
-  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/" },
+  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
 ];
 
 const TrustIndicators = () => {
