@@ -147,14 +147,9 @@ const IpReputation = () => {
                                 {r.greynoise.classification ?? (r.greynoise.riot ? "common service" : "observed")}
                                 {r.greynoise.name ? ` — ${r.greynoise.name}` : ""}
                                 {r.greynoise.link && (
-                                  <a
-                                    href={r.greynoise.link}
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="block text-primary hover:underline"
-                                  >
-                                    View on GreyNoise
-                                  </a>
+                                  <span className="block text-primary/60 text-xs italic mt-1">
+                                    Source: Verified scanner
+                                  </span>
                                 )}
                               </>
                             ) : (
