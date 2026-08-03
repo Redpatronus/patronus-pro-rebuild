@@ -59,11 +59,12 @@ const Tools = () => {
 
         <section className="py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid gap-6 lg:gap-8 max-w-3xl mx-auto">
               {tools.map((tool) => (
-                <div
+                <Link
                   key={tool.name}
-                  className="group bg-card rounded-xl p-6 lg:p-8 shadow-card border border-border hover:border-primary/30 hover:shadow-elegant transition-all duration-300"
+                  to={tool.href}
+                  className="group block bg-card rounded-xl p-6 lg:p-8 shadow-card border border-border hover:border-primary/30 hover:shadow-elegant transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-accent rounded-lg group-hover:bg-primary/10 transition-colors">
@@ -81,11 +82,16 @@ const Tools = () => {
                       <p className="font-body text-muted-foreground leading-relaxed">
                         {tool.description}
                       </p>
+                      <span className="mt-4 inline-flex items-center font-body text-sm font-semibold text-primary">
+                        Run the tool
+                        <ArrowRight className="ml-1.5 h-4 w-4" />
+                      </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
+
           </div>
         </section>
 
