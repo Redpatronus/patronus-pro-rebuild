@@ -181,26 +181,7 @@ const IpReputation = () => {
             )}
 
             <p className="font-body text-sm text-muted-foreground mt-8">
-              Data sources: the{" "}
-              <a
-                href="https://www.greynoise.io/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-primary hover:underline"
-              >
-                GreyNoise
-              </a>{" "}
-              Community API and public DNS blocklists (Spamhaus ZEN, blocklist.de, DroneBL) that
-              aggregate honeypot observations, in the spirit of{" "}
-              <a
-                href="https://www.projecthoneypot.org/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-primary hover:underline"
-              >
-                Project Honey Pot
-              </a>
-              . Results are advisory — always confirm before blocking production traffic.
+              {"\n"}
             </p>
 
             <div className="mt-8">
