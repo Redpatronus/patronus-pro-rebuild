@@ -66,18 +66,18 @@ const IpReputation = () => {
   return (
     <>
       <Helmet>
-        <title>IP Reputation Checker | Free Tool by Red Patronus</title>
+        <title>IP Reputation Checker | Free Tool by Redpatronus</title>
         <meta
           name="description"
-          content="Free IP reputation lookup combining GreyNoise internet-scanner intelligence with public blocklists. Check whether an IPv4 address is scanning, spamming or known benign."
+          content="Free IP reputation lookup combining Redpatronus internet-scanner intelligence with public blocklists. Check whether an IPv4 address is scanning, spamming or known benign."
         />
-        <link rel="canonical" href="https://redpatron.us/tools/ip-reputation" />
-        <meta property="og:title" content="IP Reputation Checker by Red Patronus" />
+        <link rel="canonical" href="https://redpatronus.com/tools/ip-reputation" />
+        <meta property="og:title" content="IP Reputation Checker by Redpatronus" />
         <meta
           property="og:description"
-          content="Check any IPv4 address against GreyNoise and public blocklists in one click."
+          content="Check any IPv4 address against Redpatronus and public blocklists in one click."
         />
-        <meta property="og:url" content="https://redpatron.us/tools/ip-reputation" />
+        <meta property="og:url" content="https://redpatronus.com/tools/ip-reputation" />
         <meta property="og:type" content="website" />
       </Helmet>
       <Layout>
