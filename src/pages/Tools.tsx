@@ -24,18 +24,18 @@ const Tools = () => {
   return (
     <>
       <Helmet>
-        <title>Security Tools by Red Patronus | Free Community Utilities</title>
+        <title>Security Tools by Redpatronus | Free Community Utilities</title>
         <meta
           name="description"
-          content="Free, practical security tools built by the Red Patronus team and shared with the community: DORA readiness checks, secret scanning, cloud posture and phishing analysis."
+          content="Free, practical security tools built by the Redpatronus team and shared with the community: IP reputation lookup, DORA readiness checks, and threat intelligence."
         />
-        <link rel="canonical" href="https://redpatron.us/tools" />
-        <meta property="og:title" content="Security Tools by Red Patronus" />
+        <link rel="canonical" href="https://redpatronus.com/tools" />
+        <meta property="og:title" content="Security Tools by Redpatronus" />
         <meta
           property="og:description"
-          content="Free, practical security tools built by the Red Patronus team and shared with the community."
+          content="Free, practical security tools built by the Redpatronus team and shared with the community."
         />
-        <meta property="og:url" content="https://redpatron.us/tools" />
+        <meta property="og:url" content="https://redpatronus.com/tools" />
         <meta property="og:type" content="website" />
       </Helmet>
       <Layout>
