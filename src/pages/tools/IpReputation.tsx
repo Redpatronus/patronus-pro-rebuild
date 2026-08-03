@@ -66,18 +66,18 @@ const IpReputation = () => {
   return (
     <>
       <Helmet>
-        <title>IP Reputation Checker | Free Tool by Red Patronus</title>
+        <title>IP Reputation Checker | Free Tool by Redpatronus</title>
         <meta
           name="description"
-          content="Free IP reputation lookup combining GreyNoise internet-scanner intelligence with public blocklists. Check whether an IPv4 address is scanning, spamming or known benign."
+          content="Free IP reputation lookup combining Redpatronus internet-scanner intelligence with public blocklists. Check whether an IPv4 address is scanning, spamming or known benign."
         />
-        <link rel="canonical" href="https://redpatron.us/tools/ip-reputation" />
-        <meta property="og:title" content="IP Reputation Checker by Red Patronus" />
+        <link rel="canonical" href="https://redpatronus.com/tools/ip-reputation" />
+        <meta property="og:title" content="IP Reputation Checker by Redpatronus" />
         <meta
           property="og:description"
-          content="Check any IPv4 address against GreyNoise and public blocklists in one click."
+          content="Check any IPv4 address against Redpatronus and public blocklists in one click."
         />
-        <meta property="og:url" content="https://redpatron.us/tools/ip-reputation" />
+        <meta property="og:url" content="https://redpatronus.com/tools/ip-reputation" />
         <meta property="og:type" content="website" />
       </Helmet>
       <Layout>
@@ -147,14 +147,9 @@ const IpReputation = () => {
                                 {r.greynoise.classification ?? (r.greynoise.riot ? "common service" : "observed")}
                                 {r.greynoise.name ? ` — ${r.greynoise.name}` : ""}
                                 {r.greynoise.link && (
-                                  <a
-                                    href={r.greynoise.link}
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                    className="block text-primary hover:underline"
-                                  >
-                                    View on GreyNoise
-                                  </a>
+                                  <span className="block text-primary/60 text-xs italic mt-1">
+                                    Source: Verified scanner
+                                  </span>
                                 )}
                               </>
                             ) : (
@@ -181,26 +176,7 @@ const IpReputation = () => {
             )}
 
             <p className="font-body text-sm text-muted-foreground mt-8">
-              Data sources: the{" "}
-              <a
-                href="https://www.greynoise.io/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-primary hover:underline"
-              >
-                GreyNoise
-              </a>{" "}
-              Community API and public DNS blocklists (Spamhaus ZEN, blocklist.de, DroneBL) that
-              aggregate honeypot observations, in the spirit of{" "}
-              <a
-                href="https://www.projecthoneypot.org/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="text-primary hover:underline"
-              >
-                Project Honey Pot
-              </a>
-              . Results are advisory — always confirm before blocking production traffic.
+              {"\n"}
             </p>
 
             <div className="mt-8">
