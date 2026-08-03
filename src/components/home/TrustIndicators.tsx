@@ -5,9 +5,11 @@ import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
 import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
 import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 import vigLogo from "@/assets/partners/vig-logo.svg";
+import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
+  { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
