@@ -7,7 +7,7 @@ export const tools = [
     icon: Radar,
     name: "IP Reputation Checker",
     description:
-      "Check any IPv4 address against GreyNoise internet-scanner intelligence and public honeypot-fed blocklists, and get a plain-language verdict in one click.",
+      "Check any IPv4 address against Redpatronus internet-scanner intelligence and our honeypot-fed blocklists, and get a plain-language verdict in one click.",
     tag: "Threat Intel",
     href: "/tools/ip-reputation",
   },
