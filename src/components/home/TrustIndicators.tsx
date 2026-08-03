@@ -10,10 +10,10 @@ import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
-  { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/" },
-  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/" },
+  { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
+  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
-  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/" },
+  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
 ];
 
 const TrustIndicators = () => {
@@ -85,8 +85,14 @@ const TrustIndicators = () => {
                 rel="noopener noreferrer"
                 className="bg-background/10 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background/20 transition-all duration-300"
               >
-                <div className="bg-background rounded-md px-4 py-3 flex items-center justify-center w-full">
-                  <img src={partner.logo} alt={partner.name} className="h-12 w-auto object-contain" />
+                <div
+                  className={`${partner.darkTile ? "bg-foreground" : "bg-background"} rounded-md px-4 py-3 flex items-center justify-center w-full h-24`}
+                >
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className={`${partner.large ? "h-20" : "h-12"} max-h-full w-auto object-contain`}
+                  />
                 </div>
                 <span className="font-body text-sm font-medium text-background">{partner.name}</span>
               </a>
