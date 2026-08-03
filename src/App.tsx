@@ -13,6 +13,8 @@ import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import Hiring from "./pages/Hiring";
 import Tools from "./pages/Tools";
+import IpReputation from "./pages/tools/IpReputation";
+
 import PenetrationTesting from "./pages/services/PenetrationTesting";
 import RedTeam from "./pages/services/RedTeam";
 import SecurityConsulting from "./pages/services/SecurityConsulting";
@@ -59,6 +61,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/hiring" element={<Hiring />} />
               <Route path="/tools" element={<Tools />} />
+              <Route path="/tools/ip-reputation" element={<IpReputation />} />
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
