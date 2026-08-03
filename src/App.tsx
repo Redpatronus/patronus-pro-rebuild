@@ -13,6 +13,8 @@ import CaseStudies from "./pages/CaseStudies";
 import Contact from "./pages/Contact";
 import Hiring from "./pages/Hiring";
 import Tools from "./pages/Tools";
+import IpReputation from "./pages/tools/IpReputation";
+
 import PenetrationTesting from "./pages/services/PenetrationTesting";
 import RedTeam from "./pages/services/RedTeam";
 import SecurityConsulting from "./pages/services/SecurityConsulting";
