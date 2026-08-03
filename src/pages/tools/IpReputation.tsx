@@ -91,8 +91,8 @@ const IpReputation = () => {
               IP Reputation Checker
             </h1>
             <p className="font-body text-lg text-muted-foreground">
-              Look up any IPv4 address against GreyNoise internet-scanner intelligence and public
-              blocklists fed by honeypot networks — no signup, no logging.
+              Look up any IPv4 address against Redpatronus internet-scanner intelligence and public
+              blocklists fed by our honeypot networks
             </p>
           </div>
         </section>
@@ -122,7 +122,7 @@ const IpReputation = () => {
                     <tr className="font-body text-xs uppercase tracking-wider text-muted-foreground">
                       <th className="px-4 py-3">IP address</th>
                       <th className="px-4 py-3">Verdict</th>
-                      <th className="px-4 py-3">GreyNoise</th>
+                      <th className="px-4 py-3">DETAIL</th>
                       <th className="px-4 py-3">Blocklists</th>
                       <th className="px-4 py-3">Last seen</th>
                     </tr>
