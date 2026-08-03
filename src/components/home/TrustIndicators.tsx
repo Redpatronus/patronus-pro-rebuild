@@ -85,7 +85,9 @@ const TrustIndicators = () => {
                 rel="noopener noreferrer"
                 className="bg-background/10 rounded-lg p-6 flex flex-col items-center justify-center gap-3 border border-background/20 hover:border-primary/50 hover:bg-background/20 transition-all duration-300"
               >
-                <img src={partner.logo} alt={partner.name} className="h-12 w-auto object-contain" />
+                <div className="bg-background rounded-md px-4 py-3 flex items-center justify-center w-full">
+                  <img src={partner.logo} alt={partner.name} className="h-12 w-auto object-contain" />
+                </div>
                 <span className="font-body text-sm font-medium text-background">{partner.name}</span>
               </a>
             ))}
