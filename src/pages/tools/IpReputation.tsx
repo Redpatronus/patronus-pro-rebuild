@@ -122,7 +122,7 @@ const IpReputation = () => {
                     <tr className="font-body text-xs uppercase tracking-wider text-muted-foreground">
                       <th className="px-4 py-3">IP address</th>
                       <th className="px-4 py-3">Verdict</th>
-                      <th className="px-4 py-3">GreyNoise</th>
+                      <th className="px-4 py-3">DETAIL</th>
                       <th className="px-4 py-3">Blocklists</th>
                       <th className="px-4 py-3">Last seen</th>
                     </tr>
