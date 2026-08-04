@@ -1,5 +1,6 @@
 import { Award, Building2, Users, Shield, Quote } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { FEATURES } from "@/config/features";
 import bonetLogo from "@/assets/partners/bonet-logo.svg";
 import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
 import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
@@ -9,7 +10,9 @@ import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
-  { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
+  ...(FEATURES.vig
+    ? [{ name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" }]
+    : []),
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
