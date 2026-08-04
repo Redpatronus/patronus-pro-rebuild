@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguagePicker from "@/components/LanguagePicker";
+import { FEATURES } from "@/config/features";
 import logoRedpatronus from "@/assets/rp-logo.svg";
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
     { href: "/services", labelKey: "nav.services" },
     { href: "/about", labelKey: "nav.about" },
     { href: "/case-studies", labelKey: "nav.caseStudies" },
-    { href: "/tools", labelKey: "nav.tools" },
+    ...(FEATURES.tools ? [{ href: "/tools", labelKey: "nav.tools" }] : []),
     { href: "/contact", labelKey: "nav.contact" },
     { href: "/hiring", labelKey: "nav.hiring", badge: true },
   ];
