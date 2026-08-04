@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import Hiring from "./pages/Hiring";
 import Tools from "./pages/Tools";
 import IpReputation from "./pages/tools/IpReputation";
+import { FEATURES } from "@/config/features";
 
 import PenetrationTesting from "./pages/services/PenetrationTesting";
 import RedTeam from "./pages/services/RedTeam";
