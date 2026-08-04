@@ -75,22 +75,24 @@ const TrustIndicators = () => {
         </div>
 
         {/* Client Testimonial */}
-        <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border mb-16 max-w-4xl mx-auto">
-          <Quote className="h-10 w-10 text-primary mb-6" />
-          <p className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8">
-            "Moving a global insurance operation from on-premise systems to the cloud is as much a security
-            programme as it is an infrastructure one. Over twelve months Red Patronus ran a phased penetration
-            testing programme, a full red team engagement and a security architecture review alongside our
-            transformation — finding the issues that mattered, explaining them in business terms and staying with us
-            until they were closed. We completed the migration with a demonstrably more resilient, DORA-aligned
-            environment than the one we left behind."
-          </p>
-          <div className="border-t border-border pt-6">
-            <div className="font-display text-base font-semibold text-foreground">Milan Padych</div>
-            <div className="font-body text-sm text-muted-foreground">COO, VIG Re — Czech Republic</div>
-            <div className="font-body text-sm text-primary mt-1">Global Insurance Company Transformation</div>
+        {FEATURES.vig && (
+          <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border mb-16 max-w-4xl mx-auto">
+            <Quote className="h-10 w-10 text-primary mb-6" />
+            <p className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8">
+              "Moving a global insurance operation from on-premise systems to the cloud is as much a security
+              programme as it is an infrastructure one. Over twelve months Red Patronus ran a phased penetration
+              testing programme, a full red team engagement and a security architecture review alongside our
+              transformation — finding the issues that mattered, explaining them in business terms and staying with us
+              until they were closed. We completed the migration with a demonstrably more resilient, DORA-aligned
+              environment than the one we left behind."
+            </p>
+            <div className="border-t border-border pt-6">
+              <div className="font-display text-base font-semibold text-foreground">Milan Padych</div>
+              <div className="font-body text-sm text-muted-foreground">COO, VIG Re — Czech Republic</div>
+              <div className="font-body text-sm text-primary mt-1">Global Insurance Company Transformation</div>
+            </div>
           </div>
-        </div>
+        )}
 
 
         {/* Partners */}
