@@ -9,6 +9,7 @@ import vigLogo from "@/assets/partners/vig-logo.svg";
 import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
 import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
+import drinkskingAsset from "@/assets/partners/drinksking.jpg.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
@@ -21,6 +22,7 @@ const trustedPartners = [
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
   { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
+  { name: "DrinksKing", logo: drinkskingAsset.url, url: "https://drinksking.sk/" },
 ];
 
 const TrustIndicators = () => {
