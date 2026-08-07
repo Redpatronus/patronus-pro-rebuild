@@ -13,6 +13,7 @@ import drinkskingAsset from "@/assets/partners/drinksking.jpg.asset.json";
 import aiDentalAsset from "@/assets/partners/ai-dental.webp.asset.json";
 import exponeaAsset from "@/assets/partners/exponea.png.asset.json";
 import sakAsset from "@/assets/partners/sak.jpeg.asset.json";
+import phishChipsAsset from "@/assets/partners/phish-and-chips.png.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
@@ -32,6 +33,7 @@ const trustedPartners = [
   { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
   { name: "DrinksKing", logo: drinkskingAsset.url, url: "https://drinksking.sk/" },
   { name: "AI:Dental", logo: aiDentalAsset.url, url: "https://www.aidental.ai" },
+  { name: "Phish & Chips", logo: phishChipsAsset.url, url: "https://phishchips.org", large: true },
 ];
 
 const TrustIndicators = () => {
