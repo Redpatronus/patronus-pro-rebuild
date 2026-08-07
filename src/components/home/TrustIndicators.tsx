@@ -15,7 +15,7 @@ const trustedPartners = [
   ...(FEATURES.vig
     ? [{ name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" }]
     : []),
-  { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.sk/" },
+  { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.eu/" },
   { name: "netPoint", logo: netpointAsset.url, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
