@@ -14,7 +14,7 @@ import aiDentalAsset from "@/assets/partners/ai-dental.webp.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
-  ...(FEATURES.vig
+  ...(FEATURES.vigLogo
     ? [{ name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" }]
     : []),
   { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.eu/" },
@@ -83,7 +83,7 @@ const TrustIndicators = () => {
         </div>
 
         {/* Client Testimonial */}
-        {FEATURES.vig && (
+        {FEATURES.vigQuote && (
           <div className="bg-card rounded-2xl p-8 lg:p-12 shadow-card border border-border mb-16 max-w-4xl mx-auto">
             <Quote className="h-10 w-10 text-primary mb-6" />
             <p className="font-body text-lg lg:text-xl text-foreground leading-relaxed mb-8">

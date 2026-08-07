@@ -5,6 +5,8 @@
 export const FEATURES = {
   /** Tools section: homepage block, /tools pages and the header nav link. */
   tools: false,
-  /** VIG Re content: homepage testimonial quote and the VIG Re partner tile. */
-  vig: true,
+  /** VIG Re partner tile in the trusted partners grid. */
+  vigLogo: true,
+  /** VIG Re testimonial quote on the homepage. */
+  vigQuote: false,
 } as const;
