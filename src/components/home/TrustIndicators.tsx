@@ -9,6 +9,7 @@ import vigLogo from "@/assets/partners/vig-logo.svg";
 import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
 import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
+import drinkskingAsset from "@/assets/partners/drinksking.jpg.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
