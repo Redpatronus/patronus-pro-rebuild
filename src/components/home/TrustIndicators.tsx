@@ -20,7 +20,7 @@ const trustedPartners = [
     ? [
         { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
         { name: "Exponea", logo: exponeaAsset.url, url: "https://www.bloomreach.com/" },
-        { name: "Slovenská Advokátska Komora", logo: sakAsset.url, url: "https://www.sak.sk/" },
+        { name: "Slovenská Advokátska Komora", logo: sakAsset.url, url: "https://www.sak.sk/", large: true },
       ]
     : []),
 
