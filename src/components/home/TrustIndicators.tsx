@@ -11,12 +11,19 @@ import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
 import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
 import drinkskingAsset from "@/assets/partners/drinksking.jpg.asset.json";
 import aiDentalAsset from "@/assets/partners/ai-dental.webp.asset.json";
+import exponeaAsset from "@/assets/partners/exponea.png.asset.json";
+import sakAsset from "@/assets/partners/sak.jpeg.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   ...(FEATURES.vigLogo
-    ? [{ name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" }]
+    ? [
+        { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
+        { name: "Exponea", logo: exponeaAsset.url, url: "https://www.bloomreach.com/" },
+        { name: "Slovenská Advokátska Komora", logo: sakAsset.url, url: "https://www.sak.sk/" },
+      ]
     : []),
+
   { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.eu/" },
   { name: "netPoint", logo: netpointAsset.url, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
