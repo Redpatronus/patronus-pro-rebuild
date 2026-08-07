@@ -22,6 +22,7 @@ const trustedPartners = [
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
   { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
+  { name: "DrinksKing", logo: drinkskingAsset.url, url: "https://drinksking.sk/" },
 ];
 
 const TrustIndicators = () => {
