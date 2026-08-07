@@ -2,37 +2,37 @@ import { Award, Building2, Users, Shield, Quote } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FEATURES } from "@/config/features";
 import bonetLogo from "@/assets/partners/bonet-logo.svg";
-import tvojKapitanAsset from "@/assets/partners/tvoj-kapitan.png.asset.json";
-import gentlemanSailingAsset from "@/assets/partners/gentleman-sailing.png.asset.json";
-import hudinyAsset from "@/assets/partners/hudiny.jpeg.asset.json";
+import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
+import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
+import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 import vigReLogo from "@/assets/partners/vig-re-logo.svg";
-import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
-import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
-import drinkskingAsset from "@/assets/partners/drinksking.jpg.asset.json";
-import aiDentalAsset from "@/assets/partners/ai-dental.webp.asset.json";
-import exponeaAsset from "@/assets/partners/exponea.png.asset.json";
-import sakAsset from "@/assets/partners/sak.jpeg.asset.json";
-import phishChipsAsset from "@/assets/partners/phish-and-chips.png.asset.json";
+import intesoftLogo from "@/assets/partners/intesoft.jpg";
+import netpointLogo from "@/assets/partners/netpoint.png";
+import drinkskingLogo from "@/assets/partners/drinksking.jpg";
+import aiDentalLogo from "@/assets/partners/ai-dental.webp";
+import exponeaLogo from "@/assets/partners/exponea.png";
+import sakLogo from "@/assets/partners/sak.jpeg";
+import phishChipsLogo from "@/assets/partners/phish-and-chips.png";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   ...(FEATURES.vigLogo
     ? [
         { name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" },
-        { name: "Exponea", logo: exponeaAsset.url, url: "https://www.bloomreach.com/" },
-        { name: "Slovenská Advokátska Komora", logo: sakAsset.url, url: "https://www.sak.sk/", large: true },
+        { name: "Exponea", logo: exponeaLogo, url: "https://www.bloomreach.com/" },
+        { name: "Slovenská Advokátska Komora", logo: sakLogo, url: "https://www.sak.sk/", large: true },
       ]
     : []),
 
-  { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.eu/" },
-  { name: "netPoint", logo: netpointAsset.url, url: "https://www.netpoint.sk/" },
+  { name: "Intesoft", logo: intesoftLogo, url: "https://www.intesoft.eu/" },
+  { name: "netPoint", logo: netpointLogo, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
-  { name: "Tvoj Kapitan", logo: tvojKapitanAsset.url, url: "https://www.tvojkapitan.sk/", darkTile: true },
-  { name: "Gentleman Sailing", logo: gentlemanSailingAsset.url, url: "https://www.gentlemansailing.sk/" },
-  { name: "Hudiny", logo: hudinyAsset.url, url: "https://hudiny.sk/", large: true },
-  { name: "DrinksKing", logo: drinkskingAsset.url, url: "https://drinksking.sk/" },
-  { name: "AI:Dental", logo: aiDentalAsset.url, url: "https://www.aidental.ai" },
-  { name: "Phish & Chips", logo: phishChipsAsset.url, url: "https://phishchips.org", large: true },
+  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
+  { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
+  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
+  { name: "DrinksKing", logo: drinkskingLogo, url: "https://drinksking.sk/" },
+  { name: "AI:Dental", logo: aiDentalLogo, url: "https://www.aidental.ai" },
+  { name: "Phish & Chips", logo: phishChipsLogo, url: "https://phishchips.org", large: true },
 ];
 
 const TrustIndicators = () => {
