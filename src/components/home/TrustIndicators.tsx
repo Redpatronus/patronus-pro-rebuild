@@ -7,12 +7,16 @@ import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
 import hudinyLogo from "@/assets/partners/hudiny.jpeg";
 import vigLogo from "@/assets/partners/vig-logo.svg";
 import vigReLogo from "@/assets/partners/vig-re-logo.svg";
+import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
+import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
 
 const trustedPartners = [
   //{ name: "Vienna Insurance Group", logo: vigLogo, url: "https://vig.cz/" },
   ...(FEATURES.vig
     ? [{ name: "VIG Re", logo: vigReLogo, url: "https://www.vig-re.com/" }]
     : []),
+  { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.sk/" },
+  { name: "netPoint", logo: netpointAsset.url, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
   { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
   { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
