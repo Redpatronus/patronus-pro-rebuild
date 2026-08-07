@@ -2,10 +2,9 @@ import { Award, Building2, Users, Shield, Quote } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FEATURES } from "@/config/features";
 import bonetLogo from "@/assets/partners/bonet-logo.svg";
-import tvojKapitanLogo from "@/assets/partners/tvoj-kapitan.png";
-import gentlemanSailingLogo from "@/assets/partners/gentleman-sailing.png";
-import hudinyLogo from "@/assets/partners/hudiny.jpeg";
-import vigLogo from "@/assets/partners/vig-logo.svg";
+import tvojKapitanAsset from "@/assets/partners/tvoj-kapitan.png.asset.json";
+import gentlemanSailingAsset from "@/assets/partners/gentleman-sailing.png.asset.json";
+import hudinyAsset from "@/assets/partners/hudiny.jpeg.asset.json";
 import vigReLogo from "@/assets/partners/vig-re-logo.svg";
 import intesoftAsset from "@/assets/partners/intesoft.jpg.asset.json";
 import netpointAsset from "@/assets/partners/netpoint.png.asset.json";
@@ -28,9 +27,9 @@ const trustedPartners = [
   { name: "Intesoft", logo: intesoftAsset.url, url: "https://www.intesoft.eu/" },
   { name: "netPoint", logo: netpointAsset.url, url: "https://www.netpoint.sk/" },
   { name: "BONET Systems", logo: bonetLogo, url: "https://bonet.systems/", darkTile: true },
-  { name: "Tvoj Kapitan", logo: tvojKapitanLogo, url: "https://www.tvojkapitan.sk/", darkTile: true },
-  { name: "Gentleman Sailing", logo: gentlemanSailingLogo, url: "https://www.gentlemansailing.sk/" },
-  { name: "Hudiny", logo: hudinyLogo, url: "https://hudiny.sk/", large: true },
+  { name: "Tvoj Kapitan", logo: tvojKapitanAsset.url, url: "https://www.tvojkapitan.sk/", darkTile: true },
+  { name: "Gentleman Sailing", logo: gentlemanSailingAsset.url, url: "https://www.gentlemansailing.sk/" },
+  { name: "Hudiny", logo: hudinyAsset.url, url: "https://hudiny.sk/", large: true },
   { name: "DrinksKing", logo: drinkskingAsset.url, url: "https://drinksking.sk/" },
   { name: "AI:Dental", logo: aiDentalAsset.url, url: "https://www.aidental.ai" },
   { name: "Phish & Chips", logo: phishChipsAsset.url, url: "https://phishchips.org", large: true },
